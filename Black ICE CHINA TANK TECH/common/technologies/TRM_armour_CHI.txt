@@ -1,5 +1,6 @@
 #中国国民革命军坦克研发科技树
 technologies = {
+	##科技树垂直和水平坐标 = {
 	#垂直坐标
 	@1928 = 0
 	@1935 = 2
@@ -45,6 +46,7 @@ technologies = {
 	@CHASSIS_LIGHT13 = 28
 	@CHASSIS_LIGHT14 = 29
 	@CHASSIS_LIGHT15 = 30
+	#}
 	
 	################################################################################################################
 	##坦克底盘科技树#
@@ -56,9 +58,7 @@ technologies = {
 				limit = { original_tag = CHI }
 				OR = {
 					has_completed_focus = KMT_closer_tie_with_fra #完成前置国策：联系法国
-					ZXL = {
-						has_opinion = { target = CHI value > 49 } #蒋介石与张学良关系良好
-					}
+					has_tech = early_tractors #早期拖拉机
 				}
 			}
 		}
@@ -687,7 +687,7 @@ technologies = {
 	##########################################################
 	#哈奇开斯M1914型8mm重机枪
 	tech_trm_weapon_mg_chi_02_hotchkiss = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_mg_chi_02_hotchkiss
 		}
@@ -716,7 +716,7 @@ technologies = {
 	}
 	#皮托SA-18型37mm坦克炮
 	tech_trm_weapon_c_chi_37_sa18 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_37_sa18
 		}
@@ -746,7 +746,7 @@ technologies = {
 	##########################################################
 	#维克斯7.7mm水冷重机枪
 	tech_trm_weapon_mg_chi_vickers = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_mg_chi_vickers #维克斯7.7mm水冷重机枪
 			trm_weapon_coax_mg_chi_vickers #维克斯7.7mm水冷重机枪(同轴)
@@ -776,7 +776,7 @@ technologies = {
 	}
 	#维克斯QF3型47mm/32倍径坦克炮
 	tech_trm_weapon_c_chi_qf3_47 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_qf3_47
 		}
@@ -806,7 +806,7 @@ technologies = {
 	##########################################################
 	#捷格加廖夫7.62mmDT型车载机枪(同轴/后向)
 	tech_trm_weapon_mg_chi_dt = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi } 
 		enable_equipment_modules = {
 			trm_weapon_coax_mg_chi_dt #捷格加廖夫7.62mmDT型车载机枪(同轴)
 			trm_weapon_hull_mg_chi_dt #捷格加廖夫7.62mmDT型车载机枪(后向)
@@ -839,7 +839,7 @@ technologies = {
 	}
 	#第八火炮工厂M1934型45mm20-K坦克炮
 	tech_trm_weapon_c_chi_45_20k34 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_45_20k34
 		}
@@ -875,7 +875,7 @@ technologies = {
 	}
 	#第八火炮工厂M1938型45mm20-K坦克炮
 	tech_trm_weapon_c_chi_45_20k38 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_45_20k38
 		}
@@ -904,7 +904,7 @@ technologies = {
 	}
 	#45mm20-K坦克炮弹药
 	tech_trm_ammo_chi_apcr_small = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		xp_research_type = army
 		xp_boost_cost = 150 #研究加成花费XP
 		xp_research_bonus = 0.30 #研究加成
@@ -942,7 +942,7 @@ technologies = {
 	##########################################################
 	#西蒙&祖尔MG13式7.92mm机枪(双联装)
 	tech_trm_weapon_mg_chi_mg13_x2 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_mg_chi_mg13_x2
 		}
@@ -979,7 +979,7 @@ technologies = {
 	##########################################################
 	#莱茵金属KwK30型20mmL/55机关炮
 	tech_trm_weapon_c_chi_KwK20 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_KwK20 #莱茵金属KwK30型20mmL/55机关炮
 		}
@@ -1011,7 +1011,7 @@ technologies = {
 	}
 	#莱茵金属KwK30型20mmL/55机关炮弹药
 	tech_trm_ammo_c_chi_kwk20 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		xp_research_type = army
 		xp_boost_cost = 50 #研究加成花费XP
 		xp_research_bonus = 0.30 #研究加成
@@ -1048,7 +1048,7 @@ technologies = {
 	##########################################################
 	#莱茵金属KwK36型37mmL/45坦克炮
 	tech_trm_weapon_c_chi_KwK37 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_KwK37 #莱茵金属KwK36型37mmL/45坦克炮
 		}
@@ -1081,7 +1081,7 @@ technologies = {
 	}
 	#毛瑟MG34式7.92mm车载机枪
 	tech_trm_weapon_coax_mg_chi_mg34 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
 			trm_weapon_coax_mg_chi_mg34_x2 #毛瑟MG34式7.92mm机枪(同轴/双联装)
@@ -1112,7 +1112,7 @@ technologies = {
 	}
 	#莱茵金属KwK36型37mmL/45坦克炮弹药
 	tech_trm_ammo_c_chi_kwk37 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		xp_research_type = army
 		xp_boost_cost = 100 #研究加成花费XP
 		xp_research_bonus = 0.50 #研究加成
@@ -1149,7 +1149,7 @@ technologies = {
 	##########################################################
 	#M5型37mmL/53坦克炮
 	tech_trm_weapon_c_chi_37_m5 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_37_m5 #M5型37mmL/53坦克炮
 		}
@@ -1185,7 +1185,7 @@ technologies = {
 	}
 	#勃朗宁M1919A4型7.62mm车载机枪
 	tech_trm_weapon_mg_chi_m1919 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_coax_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(同轴)
 			trm_weapon_hull_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(航向)
@@ -1224,7 +1224,7 @@ technologies = {
 	##########################################################
 	#M3型75mmL/40坦克炮
 	tech_trm_weapon_c_chi_75_m3 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_75_m3
 		}
@@ -1256,7 +1256,7 @@ technologies = {
 	}
 	#勃朗宁M2式12.7mm车载机枪
 	tech_trm_weapon_mg_chi_m2 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_mg_chi_m2 #勃朗宁M2式12.7mm重机枪
 		}
@@ -1288,7 +1288,7 @@ technologies = {
 	}
 	#M3型75mmL/40坦克炮弹药
 	tech_trm_ammo_c_chi_75_m3 = {
-		allow = { has_country_flag = UNLOCK:armor_folder } 
+		allow = { original_tag = chi }
 		xp_research_type = army
 		xp_boost_cost = 150 #研究加成花费XP
 		xp_research_bonus = 0.50 #研究加成

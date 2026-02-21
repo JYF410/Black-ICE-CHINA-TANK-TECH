@@ -118,7 +118,7 @@ spriteTypes = { #对应文件common\technologies\trm_armour_chi
 	#45mm20-K坦克炮弹药
 	SpriteType = {
 		name = "GFX_tech_trm_ammo_chi_apcr_small_medium"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+		textureFile = "gfx/interface/technologies/land/TRM/45mm_20K.dds"
 	}
 	#捷格加廖夫7.62mmDT型车载机枪(同轴/后向/高射)
 	SpriteType = {
@@ -133,12 +133,12 @@ spriteTypes = { #对应文件common\technologies\trm_armour_chi
 	#莱茵金属KwK30型20mmL/55机关炮
 	spriteType = {
 		name = "GFX_tech_trm_weapon_c_chi_KwK20_medium"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_autoloader.dds"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_machine_gun.dds"
 	}	
 	#莱茵金属KwK30型20mmL/55机关炮弹药
 	spriteType = {
 		name = "GFX_tech_trm_ammo_c_chi_kwk20_medium"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+		textureFile = "gfx/interface/technologies/land/TRM/KwK_30_20mm.dds"
 	}
 	#莱茵金属KwK36型37mmL/45坦克炮
 	spriteType = {
@@ -153,7 +153,7 @@ spriteTypes = { #对应文件common\technologies\trm_armour_chi
 	#莱茵金属KwK36型37mmL/45坦克炮弹药
 	spriteType = {
 		name = "GFX_tech_trm_ammo_c_chi_kwk37_medium"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+		textureFile = "gfx/interface/technologies/land/TRM/KwK_36_37mm.dds"
 	}
 	#M5型37mmL/53坦克炮
 	SpriteType = {
@@ -178,7 +178,7 @@ spriteTypes = { #对应文件common\technologies\trm_armour_chi
 	#M3型75mmL/40坦克炮弹药
 	SpriteType = {
 		name = "GFX_tech_trm_ammo_c_chi_75_m3_medium"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+		textureFile = "gfx/interface/technologies/land/TRM/M3_75mm_L40.dds"
 	}
 	###################################################################################################
 	## 中国国民革命军坦克科技树配件图标
