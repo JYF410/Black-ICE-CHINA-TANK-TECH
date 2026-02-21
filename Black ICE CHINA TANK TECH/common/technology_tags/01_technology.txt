@@ -1,0 +1,18 @@
+#新增中国国民革命军坦克/飞机科技
+technology_folders = {
+
+	trm_armour_chi_folder = { #科技树图标对应GUI文件第24709行
+		ledger = army
+		available = { 
+			has_country_flag = CHI_armor
+		}
+	}
+	chiair_folder = { #科技树图标对应GUI文件第24750行
+		ledger = air
+		available = { 
+			has_country_flag = CHI_air
+		}
+	}
+
+}
+### EOF ###

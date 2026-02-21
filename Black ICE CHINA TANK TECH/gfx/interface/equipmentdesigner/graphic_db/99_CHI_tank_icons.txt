@@ -1,0 +1,177 @@
+#坦克设计图标
+CHI = {
+
+	#############################################################################
+	##                                轻型坦克线                                ##
+	#############################################################################
+	#雷诺FT-17(初始坦克)
+	trm_light_tank_chassis_chi_ft17 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_chi_armour_medium
+			}
+			models = {
+				"CHI_trm_light_armor_1_entity"
+			}
+		}
+	}	
+	#雷诺ZB底盘
+	trm_light_tank_chassis_chi_zb_1 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_zb_1_medium
+			}
+			models = {
+				"CHI_trm_light_armor_2_entity"
+			}
+		}
+	}
+	#维克斯Mk.E型
+	trm_light_tank_chassis_chi_vickers_mke = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_vickers_mke_medium
+			}
+			models = {
+				"CHI_trm_light_armor_3_entity"
+			}
+		}
+	}
+    #T-26B(1933型)底盘
+	trm_light_tank_chassis_chi_t26b_1 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_t26b_1_medium
+			}
+			models = {
+				"CHI_trm_light_armor_4_entity"
+			}
+		}
+	}
+	#T-26B(1937型)底盘
+	trm_light_tank_chassis_chi_t26b_2 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_t26b_2_medium
+			}
+			models = {
+				"CHI_trm_light_armor_5_entity"
+			}
+		}
+	}
+	#I号坦克A型底盘
+	trm_light_tank_chassis_chi_panzer1a = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_panzer1a_medium
+			}
+			models = {
+				"CHI_trm_light_armor_6_entity"
+			}
+		}
+	}
+	#美国M3A3型底盘
+	trm_light_tank_chassis_chi_m3a3 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_m3a3_medium
+			}
+			models = {
+				"CHI_trm_light_armor_7_entity"
+			}
+		}
+	}
+	#II号坦克A型底盘
+	trm_light_tank_chassis_chi_panzer2a = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_panzer2a_medium
+			}
+			models = {
+				"CHI_trm_light_armor_8_entity"
+			}
+		}
+	}
+	#############################################################################
+	##                               超轻型坦克线                               ##
+	#############################################################################
+	#菲亚特CV-33
+	trm_tankette_tank_chassis_chi_cv33 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_tankette_tank_chassis_chi_cv33_medium
+			}
+			models = {
+				"CHI_trm_tankette_armor_1_entity"
+			}
+		}
+	}
+	#菲亚特CV-35
+	trm_tankette_tank_chassis_chi_cv35 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_tankette_tank_chassis_chi_cv35_medium
+			}
+			models = {
+				"CHI_trm_tankette_armor_2_entity"
+			}
+		}
+	}
+	#雷诺UE
+	trm_tankette_tank_chassis_chi_ue = {
+		pool = {
+			icons = {
+				GFX_tech_trm_tankette_tank_chassis_chi_ue_medium
+			}
+			models = {
+				"CHI_trm_tankette_armor_3_entity"
+			}
+		}
+	}
+	#卡登·洛伊德Mk.VI
+	trm_tankette_tank_chassis_chi_cardenloyd_mkVI = {
+		pool = {
+			icons = {
+				GFX_tech_trm_tankette_tank_chassis_chi_cardenloyd_mkVI_medium
+			}
+			models = {
+				"CHI_trm_tankette_armor_4_entity"
+			}
+		}
+	}
+	trm_tankette_tank_amphibious_chassis_chi_cardenloyd_mkVI = {
+		pool = {
+			icons = {
+				GFX_tech_trm_tankette_tank_amphibious_chassis_chi_cardenloyd_mkVI_medium
+			}
+			models = {
+				"CHI_trm_tankette_armor_5_entity"
+			}
+		}
+	}
+	#############################################################################
+	##                                中型坦克线                                ##
+	#############################################################################
+	#美国M4A4型
+	trm_medium_tank_chassis_chi_m4a4 = {
+		pool = {
+			icons = {
+				GFX_tech_trm_medium_tank_chassis_chi_m4a4_medium
+			}
+			models = {
+				"CHI_trm_medium_armor_1_entity"
+			}
+		}
+	}
+	#III号坦克A型底盘
+	trm_light_tank_chassis_chi_panzer3a = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_panzer3a_medium
+			}
+			models = {
+				"CHI_trm_light_armor_2_entity"
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+﻿# Localization of Nationalist Tank Chassis Icon Names  
+# Corresponding file: common\units\equipment\trm_tank_chassis  
+l_english:
+ # Renault FT-17  
+ trm_light_tank_chassis_chi_ft17:0 "Renault FT-17"  
+ trm_light_tank_chassis_chi_ft17_desc:0 "The Renault FT-17 light tank, pioneered by France during World War I, features an 8mm Model 1914 machine gun with 4,800 rounds of ammunition and 6-22mm armor. Under warlord Zhang Zuolin, the Northeastern Army fielded French FT tanks retrofitted with Czechoslovak ZB-26 7.92mm machine guns. After the Northeastern Flag Replacement, Zhang Xueliang gifted two FT-17s to Nanjing in 1933. One served as a training vehicle at Nanjing Central Military Academy until captured by Japanese forces during the 1937 Battle of Nanjing and displayed as war booty in Japan."  
+ trm_light_tank_equipment_chi_ft17:0 "Renault FT-17 (Nationalist)"  
+
+ # Fiat CV-33  
+ trm_tankette_tank_chassis_chi_cv33:0 "Fiat CV-33"  
+  trm_tankette_tank_chassis_chi_cv33_desc:0 "Fiat CV-33 (Tax Police General Corps)"  
+ trm_tankette_tank_equipment_chi_cv33:0 "Fiat CV-33 (Tax Police General Corps)"  
+
+ # Fiat CV-35  
+ trm_tankette_tank_chassis_chi_cv35:0 "Fiat CV-35"  
+  trm_tankette_tank_chassis_chi_cv35_desc:0 "Fiat CV-35 (200th Division Tank Regiment)"  
+ trm_tankette_tank_equipment_chi_cv35:0 "Fiat CV-35 (200th Division Tank Regiment)"  
+
+ # Renault UE  
+ trm_tankette_tank_chassis_chi_ue:0 "Renault UE"  
+  trm_tankette_tank_chassis_chi_ue_desc:0 "Renault UE (China Expeditionary Force to Burma)"  
+ trm_tankette_tank_equipment_chi_ue:0 "Renault UE (China Expeditionary Force to Burma)"  
+
+ # Renault ZB  
+ trm_light_tank_chassis_chi_zb_1:0 "Renault ZB"  
+  trm_light_tank_chassis_chi_zb_1_desc:0 "Renault ZB (China Expeditionary Force to Burma)"  
+ trm_light_tank_equipment_chi_zb_1:0 "Renault ZB (China Expeditionary Force to Burma)"  
+ trm_light_tank_chassis_chi_zb_2:0 "Renault ZB (Artillery)"  
+  trm_light_tank_chassis_chi_zb_2_desc:0 "Renault ZB (47mm Skoda Gun)"  
+ trm_light_tank_equipment_chi_zb_2:0 "Renault ZB (Artillery)"  
+
+ # Vickers-Carden-Loyd Mk.VI  
+ trm_tankette_tank_chassis_chi_cardenloyd_mkVI:0 "Carden-Loyd Mk.VI"  
+  trm_tankette_tank_chassis_chi_cardenloyd_mkVI_desc:0 "Named after designers Carden and Loyd, their 1925 prototype evolved into the MkI tankette, influencing German Panzer I development. In 1928, Finance Minister T.V. Soong purchased 18-24 units for the Tax Police Corps - China's first armored force under the Army Instruction Division. Guarded as elite assets, these saw limited combat until the 1937 Battle of Nanjing, where most were destroyed or captured after chaotic retreats."  
+ trm_tankette_tank_equipment_chi_cardenloyd_mkVI:0 "Carden-Loyd Mk.VI (Tax Police General Corps)"  
+
+ # Vickers Mk.E  
+ trm_light_tank_chassis_chi_vickers_mke:0 "Vickers Mk.E"  
+  trm_light_tank_chassis_chi_vickers_mke_desc:0 "In 1936, Nanjing acquired 29 British Vickers Mk.E tanks (1.75 tons, 3 crew, 40mm gun) for the 2nd Tank Battalion. The 1st Tank Company's 16 MkEs ("Tiger Company") weighed 6.5 tons with 47mm guns and 7.9mm machine guns. They retained factory four-tone camouflage (yellow/grey/brown/green) with black borders, numbered 50-69 on turrets and marked with white '虎' (tiger) characters."  
+ trm_light_tank_equipment_chi_vickers_mke:0 "Vickers Mk.E (1st Tank Battalion, 'Tiger' Company)"  
+
+ # Vickers-Carden-Loyd Amphibious  
+ trm_light_tank_amphibious_chassis_chi_vickers_mke:0 "Vickers-Carden-Loyd (VCL) Amphibious Tank"  
+  trm_light_tank_amphibious_chassis_chi_vickers_mke_desc:0 "Vickers-Carden-Loyd (VCL) Amphibious Tank"  
+ trm_light_tank_amphibious_equipment_chi_vickers_mke:0 "VCL Amphibious Tank (2nd Tank Battalion, 'Dragon' Company)"  
+
+ # T-26B (1933)  
+ trm_light_tank_chassis_chi_t26b_1:0 "T-26 (1933)"  
+  trm_light_tank_chassis_chi_t26b_1_desc:0 "In September 1937, Soviet aid delivered 82 T-26B (1933) tanks to China. Seventy were assigned to Du Yuming's 200th Division - the Nationalists' first mechanized division. These arrived via British ships from Odessa/Sevastopol to Xiangtan, Hunan by March 1938, forming China's elite early-war armored force."  
+ trm_light_tank_equipment_chi_t26b_1:0 "T-26B (200th Division Tank Regiment)"  
+
+ # T-26B (1937)  
+ trm_light_tank_chassis_chi_t26b_2:0 "T-26 (1937)"  
+  trm_light_tank_chassis_chi_t26b_2_desc:0 "The 1937 T-26B variant featured a rotating commander's cupola and 7.62mm DT AA machine gun. Assigned to the 200th Division Tank Regiment (later 5th Army Armored Corps), these upgraded models enhanced anti-air capabilities compared to the 1933 version."  
+ trm_light_tank_equipment_chi_t26b_2:0 "T-26B (5th Army Armored Corps)"  
+
+ # Panzer I Ausf.A  
+ trm_light_tank_chassis_chi_panzer1a:0 "Krupp PzKpfw.I Ausf.A"  
+  trm_light_tank_chassis_chi_panzer1a_desc:0 "In 1936, Nanjing purchased 10-17 Krupp Panzer I.La.S tanks (1.03 million Reichsmark ≈ $34M modern). Delayed shipments arrived June 1937 as the "Krupp-Style Tanks". Organized into the 3rd Company, Army Armored Corps under Major Zhao Guzhen, these saw no Shanghai action but were destroyed/captured during Nanjing's chaotic December retreat after being ordered to defend the city as part of the anti-tank artillery reserve."  
+ trm_light_tank_equipment_chi_panzer1a:0 "Panzer I Ausf.A (3rd Tank Company)"
+ # Panzer II Type A
+ trm_light_tank_chassis_chi_panzer2a:0 "Krupp PzKpfw.II Type A"
+ trm_light_tank_chassis_chi_panzer2a_desc:0 "The Panzer II was developed in 1934, with limited production of field test models (Types IIa, IIb, and IIc) beginning in 1935. The first definitive Type IIa tank entered production in July 1937. They saw action in the Spanish Civil War, the Polish Campaign, and the French Campaign, and were the standard main battle tanks of German armored divisions during the invasion of France. In 1941, when the Panzer III and IV tanks entered service, the lighter Panzer II was quickly withdrawn from frontline combat due to its insufficient 20mm cannon against Allied tanks in North Africa. They were ultimately reassigned to reconnaissance duties, and by 1942, most had been retired. Between 1935 and 1943, a total of 1,856 Panzer II light tanks were produced. A significant number of German companies participated in production, including Alkett, FAMO, Daimler-Benz, Henschel, MAN, MIAG, and Wegmann. After the Panzer II light tank was phased out, many were converted into self-propelled artillery vehicles or multi-purpose carriers. There were also a few limited production variants, such as the Panzer IIL reconnaissance tank (the only variant with overlapping wheels) and the Panzer II Flamm flame thrower."
+ trm_light_tank_equipment_chi_panzer2a:0 "Panzer II Type A"
+ # Panzer III Type A
+ trm_medium_tank_chassis_chi_panzer3a:0 "Daimler-Benz PzKpfw.III Type A"
+ trm_medium_tank_chassis_chi_panzer3a_desc:0 "The Panzer III was designed by the German Army Weapons Department according to specifications requested by Heinz Guderian in early 1934. Daimler-Benz, Krupp, MAN, and Rheinmetall all produced prototypes, which were tested in 1936 and 1937. Daimler-Benz's design was ultimately selected for production, which began in early 1937. The first Panzer III medium tank rolled off the assembly line in May 1937, but mass production did not begin until 1939, and it became the standard tank of the German Army. The Panzer III medium tank featured vertical-sloped armor, with the driver seated on the left and the radio operator on the right. The turret at the top of the tank seated three crew members, which was more than some of their contemporaries, allowing them to fire continuously more effectively in combat. The commander's cupola was located on top of the turret. The engine was at the rear, along with an air-cooled radiator. Initially, the Panzer III's armor was not as thick, with homogeneous steel armor of only 15mm on the sides, 10mm on the top, and 5mm on the bottom, and its main armament was a 37mm gun. In the D model and later variants, the side armor thickness was increased to 30mm, and the gun was upgraded to a 50mm caliber. Production of the Panzer III continued until 1943, when it was primarily used to support infantry with larger-caliber guns. A total of 5,774 Panzer III medium tanks were produced during this period."
+ trm_medium_tank_equipment_chi_panzer3a:0 "Panzer III Type A"
+
+ # American M3A3
+ trm_light_tank_chassis_chi_m3a3:0 "Stuart M3A3"
+ trm_light_tank_chassis_chi_m3a3_desc:0 "Although the M3 series of tanks had a considerable production output, by the mid-to-late stages of World War II, it was outdated in terms of firepower, mobility, and armor protection. Therefore, it was primarily used for training and battlefield reconnaissance by the U.S. military. Under the Lend-Lease Act, the U.S. provided a large number of these tanks to wartime allies such as the United Kingdom and the Soviet Union, with China also included in this list. From 1943 onwards, the Chinese Expeditionary Force in India began receiving U.S.-style training in Ramgarh, India. In October of that year, the Tank Training Class for the Chinese Expeditionary Force officially opened, with Cai Zonglian, former director of the Transport and Supply Corps Education Department of the Transportation and Supply School, serving as the class director. Relying on 145 M3A3 Stuart light tanks, 200 six-wheeled trucks, and 50 jeeps received from the port of Calcutta, as well as graduates from the Tank Training Class, the Chinese Expeditionary Force in India established the "Sino-American First Provisional Tank Group," consisting of seven tank battalions. The 1st Tank Battalion entered combat in the Hukawng Valley in March 1944, achieving significant victories. It also captured the headquarters of the Japanese 18th Division in Waluban, killing over 500 Japanese soldiers, including two colonels, one lieutenant colonel, and one captain, while also seizing the division's official seal. Although the 2nd Tank Battalion also deployed to the frontline, it was primarily used as a strategic reserve, with fewer combat engagements, scale, and achievements compared to the 1st Tank Battalion. After the victory in the War of Resistance Against Japan, the 1st and 2nd Tank Battalions were allowed to return to Shanghai with their M3A3 Stuart light tanks. In the winter of 1945, these two tank battalions were reorganized into the 1st Tank Regiment in the Xuzhou area, with most personnel from the 142nd Regiment of the 48th Division, consisting of three tank battalions. In mid-1946, the Nationalist Army Headquarters transferred the 80th Brigade from the 26th Division to strengthen the 1st Tank Battalion of the 1st Tank Regiment, along with the 5th Artillery Regiment, one battalion of the 4th Artillery Regiment, the Search Battalion, the Engineer Battalion, and the Motor Transport Regiment, forming the 1st Rapid纵队. This motorized unit possessed 24 M3A3 Stuart light tanks, 24 M1 105mm howitzers, over 100 Dodge ten-wheeled trucks, as well as some M3 armored reconnaissance vehicles, M3 armored personnel carriers, Willys jeeps, and American medium jeeps, making it the most formidable in terms of firepower and mobility within the Nationalist Army."
+ trm_light_tank_equipment_chi_m3a3:0 "Stuart M3A3 (1st Tank Battalion, Chinese Expeditionary Force in India)"
+ # American M4A4
+ trm_medium_tank_chassis_chi_m4a4:0 "Sherman M4A4"
+ trm_medium_tank_chassis_chi_m4a4_desc:0 "On December 23, 1941, China and Britain signed the Agreement on Joint Defense of the Burma Road. On December 26, China and Britain established a military alliance, deciding to send the Chinese Expeditionary Force to Burma to support the British forces against Japan. This expeditionary operation marked China's first overseas military engagement since the First Sino-Japanese War, showcasing the Chinese people's spirit of internationalism and national sacrifice, thereby enhancing China's international standing. During the first deployment of the Chinese Expeditionary Force into Burma, the New 38th Division of the 66th Army, consisting of over 4,000 personnel, was cut off from the main force west of the Yangon-Mandalay railway while rescuing the British-Indian forces besieged by the Japanese. The division and the headquarters of the Expeditionary Force, under the command of Joseph Stilwell and Luo Zhuoying, arrived in Imphal, India, on May 24, 1942. The New 22nd Division of the 5th Army, along with its headquarters, consisting of approximately 4,500 personnel, under the command of Du Yuming, reached Ledo, India, after a two-month journey through the mountainous regions of Burma, including Taluo and Nwe Pyaung. Stilwell, Chief of Staff of the China Theater, had come to admire the Chinese soldiers' resilience and tenacity through previous battles. After suffering significant losses in the initial Burma campaign, Stilwell proposed to quickly restore the combat capability of the Chinese forces. With his recommendation, the Chinese government agreed to leave these forces in British India and reorganize them into the Chinese Expeditionary Force in India. In 1944, the Chinese Expeditionary Force in India received a small number of M4A4 tanks. Originally not included in the Lend-Lease Act, after the Tank Regiment of the Chinese Expeditionary Force in India gained combat experience with M3A3 tanks against the Japanese at the end of 1943, it was found that the M3 series lacked sufficient armor protection. Therefore, the U.S. military provided some M4A4 tanks originally intended for the British forces for the Tank Regiment's use. The soldiers of the Chinese Expeditionary Force designed highly distinctive paint schemes for the tanks, painting small tigers on the body and around the gun mount, and adding slogans such as "Assault" on the sides of the tank."
+ trm_medium_tank_equipment_chi_m4a4:0 "Sherman M4A4 (Provisional 1st Tank Group)"

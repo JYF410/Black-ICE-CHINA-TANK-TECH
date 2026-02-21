@@ -1,0 +1,13 @@
+#雷诺FT-17(初始坦克)
+animation = {
+	name = "CHI_ww1_tank_attack_animation"
+	file = "CHI_ww1_tank_attack.anim"
+}
+animation = {
+	name = "CHI_ww1_tank_idle_animation"
+	file = "CHI_ww1_tank_idle.anim"
+}
+animation = {
+	name = "CHI_ww1_tank_moving_animation"
+	file = "CHI_ww1_tank_moving.anim"
+}

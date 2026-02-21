@@ -1,0 +1,337 @@
+spriteTypes = { #对应文件common\technologies\trm_armour_chi
+	###################################################################################################
+	## 中国国民革命军坦克科技树底盘图标
+	###################################################################################################
+	#雷诺FT-17(初始坦克)
+	SpriteType = {
+		name = "GFX_tech_trm_chi_armour_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_ft17.dds"
+	}
+	#菲亚特CV-33
+	SpriteType = {
+		name = "GFX_tech_trm_tankette_tank_chassis_chi_cv33_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_tankette_cv33.dds"
+	}
+	#菲亚特CV-35
+	SpriteType = {
+		name = "GFX_tech_trm_tankette_tank_chassis_chi_cv35_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_takette_cv35.dds"
+	}
+    #雷诺UE
+	SpriteType = {
+		name = "GFX_tech_trm_tankette_tank_chassis_chi_ue_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_ue.dds"
+	}
+	#雷诺ZB
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_zb_1_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_zb_1.dds"
+	}	
+	#卡登·洛伊德Mk.VI
+	SpriteType = {
+		name = "GFX_tech_trm_tankette_tank_chassis_chi_cardenloyd_mkVI_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_cardenloyd_mkVI.dds"
+	}
+	#维克斯-卡登·洛伊德(VCL)水陆两栖坦克
+	SpriteType = {
+		name = "GFX_tech_trm_tankette_tank_amphibious_chassis_chi_cardenloyd_mkVI_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_vickers_cardenloyd.dds"
+	}
+	#维克斯Mk.E型
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_vickers_mke_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_vickers_mke.dds"
+	}
+	#T-26B(1933型)
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_t26b_1_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_t26b_1.dds"
+	}
+	#T-26B(1937型)
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_t26b_2_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_t26b_2.dds"
+	}
+	#I号坦克A型
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_panzer1a_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer1a.dds"
+	}
+	#II号坦克A型
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_panzer2a_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer2a.dds"
+	}
+	#III号坦克A型
+	SpriteType = {
+		name = "GFX_tech_trm_medium_tank_chassis_chi_panzer3a_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer3a.dds"
+	}
+	#美国M3A3型
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_m3a3_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_m3a3.dds"
+	}
+	#美国M4A4型
+	SpriteType = {
+		name = "GFX_tech_trm_medium_tank_chassis_chi_m4a4_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_m4a4.dds"
+	}
+	###################################################################################################
+	## 中国国民革命军坦克科技树武器配件图标
+	###################################################################################################
+	#布尔诺兵工厂ZB-26式7.92mm轻机枪
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_01_zb26_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_small_main_armament.dds"
+	}
+	#哈奇开斯M1914型8mm重机枪
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_02_hotchkiss_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_machine_gun.dds"
+	}
+	#皮托SA-18型37mm坦克炮
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_37_sa18_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_module_close_support_gun.dds"
+	}
+	#维克斯7.7mm水冷重机枪
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_vickers_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_machine_gun.dds"
+	}	
+	#维克斯QF3型47mm/32倍径坦克炮
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_qf3_47_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_module_close_support_gun.dds"
+	}
+	#第八火炮工厂M1934型45mm20-K坦克炮
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_45_20k34_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_medium_main_armament.dds"
+	}
+	#第八火炮工厂M1938型45mm20-K坦克炮
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_45_20k38_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_medium_main_armament.dds"
+	}
+	#45mm20-K坦克炮弹药
+	SpriteType = {
+		name = "GFX_tech_trm_ammo_chi_apcr_small_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+	}
+	#捷格加廖夫7.62mmDT型车载机枪(同轴/后向/高射)
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_dt_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_small_main_armament.dds"
+	}
+	#西蒙&祖尔MG13式7.92mm机枪(双联装)
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_mg13_x2_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_small_main_armament.dds"
+	}
+	#莱茵金属KwK30型20mmL/55机关炮
+	spriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_KwK20_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_autoloader.dds"
+	}	
+	#莱茵金属KwK30型20mmL/55机关炮弹药
+	spriteType = {
+		name = "GFX_tech_trm_ammo_c_chi_kwk20_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+	}
+	#莱茵金属KwK36型37mmL/45坦克炮
+	spriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_KwK37_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_medium_main_armament.dds"
+	}
+	#毛瑟MG34式7.92mm车载机枪(双联装同轴/航向)
+	spriteType = {
+		name = "GFX_tech_trm_weapon_coax_mg_chi_mg34_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_small_main_armament.dds"
+	}
+	#莱茵金属KwK36型37mmL/45坦克炮弹药
+	spriteType = {
+		name = "GFX_tech_trm_ammo_c_chi_kwk37_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+	}
+	#M5型37mmL/53坦克炮
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_37_m5_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_medium_main_armament.dds"
+	}
+	#勃朗宁M1919A4型7.62mm车载机枪
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_m1919_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_small_main_armament.dds"
+	}
+	#M3型75mmL/40坦克炮
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_c_chi_75_m3_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_medium_main_armament.dds"
+	}
+	#勃朗宁M2式12.7mm重机枪
+	SpriteType = {
+		name = "GFX_tech_trm_weapon_mg_chi_m2_medium"
+		textureFile = "gfx/interface/technologies/land/TRM/tank_machine_gun.dds"
+	}
+	#M3型75mmL/40坦克炮弹药
+	SpriteType = {
+		name = "GFX_tech_trm_ammo_c_chi_75_m3_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo.dds"
+	}
+	###################################################################################################
+	## 中国国民革命军坦克科技树配件图标
+	###################################################################################################
+	#两栖浮渡设备图标
+	SpriteType = {
+		name = "GFX_tech_trm_special_schwimmpanzer_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/amphibious_drive.dds"
+	}
+	#潜渡设备图标
+	SpriteType = {
+		name = "GFX_tech_trm_special_tauchpanzer_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/amphibious_drive.dds"
+	}
+	#焊接结构图标
+	SpriteType = {
+		name = "GFX_tech_trm_armour_construction_welded_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/armor_construction_welded.dds"
+	}
+	#部分铸造结构图标
+	SpriteType = {
+		name = "GFX_tech_trm_armour_construction_cast_partial_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/armor_construction_partialcast_riveted.dds"
+	}
+	#铸造结构图标
+	SpriteType = {
+		name = "GFX_tech_trm_armour_construction_cast_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/armor_construction_cast.dds"
+	}
+    #改良铸造图标
+	SpriteType = {
+		name = "GFX_tech_trm_armour_construction_cast_improved_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/armor_construction_cast.dds"
+	}
+    #部分倾斜装甲设计图标
+	SpriteType = {
+		name = "GFX_tech_trm_armour_design_partial_sloped_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/sloped_armor.dds"
+	}
+    #倾斜装甲设计图标
+	SpriteType = {
+		name = "GFX_tech_trm_armour_design_sloped_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/sloped_armor.dds"
+	}
+    #资源节约结构图标
+	SpriteType = {
+		name = "GFX_tech_trm_tank_construction_resource_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_blueprint.dds"
+	}
+	#成本节约结构图标
+	SpriteType = {
+		name = "GFX_tech_trm_tank_construction_fast_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_blueprint.dds"
+	}
+    #车长塔图标
+	SpriteType = {
+		name = "GFX_tech_trm_special_cupola_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/cupola.dds"
+	}
+    #标准人机功效图标
+	SpriteType = {
+		name = "GFX_tech_trm_ergonomics_standard_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/ergonomics_standard.dds"
+	}
+	#改良人机功效图标
+	SpriteType = {
+		name = "GFX_tech_trm_ergonomics_improved_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/ergonomics_good.dds"
+	}
+	#标准生产模式图标
+	SpriteType = {
+		name = "GFX_tech_trm_tank_construction_standard_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_construction_standard.dds"
+	}
+	#高质量生产模式图标
+	SpriteType = {
+		name = "GFX_tech_trm_tank_construction_quality_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_construction_standard.dds"
+	}
+	#流水线生产图标
+	SpriteType = {
+		name = "GFX_tech_trm_tank_construction_streamlined_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_construction_streamlined.dds"
+	}
+	#坦克科技占位图标1
+	SpriteType = {
+		name = "GFX_tech_trm_NA_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_construction_fast.dds"
+	}
+	#坦克科技占位图标2
+	SpriteType = {
+		name = "GFX_tech_trm_NA_chi_2_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/tank_construction_fast.dds"
+	}
+	#扭杆悬挂图标
+	SpriteType = {
+		name = "GFX_tech_trm_suspension_torsion_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/torsion_bar.dds"
+	}
+	#双扭杆悬挂图标
+	SpriteType = {
+		name = "GFX_tech_trm_suspension_torsion_double_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/torsion_bar_improved.dds"
+	}
+    #差动传动图标
+	SpriteType = {
+		name = "GFX_tech_trm_transmission_differential_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/transmission_differential.dds"
+	}
+	#双传动图标
+	SpriteType = {
+		name = "GFX_tech_trm_transmission_twin_transmission_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/transmission_twin_transmission.dds"
+	}
+	#双流差动传动图标
+	SpriteType = {
+		name = "GFX_tech_trm_transmission_double_differential_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/transmission_double_differential.dds"
+	}
+    #标准变速箱图标
+	SpriteType = {
+		name = "GFX_tech_trm_gearbox_standard_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/gearbox_standard.dds"
+	}
+    #先进变速箱图标
+	SpriteType = {
+		name = "GFX_tech_trm_gearbox_advanced_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/gearbox_advanced.dds"
+	}
+    #引进国外发动机生产线图标
+	SpriteType = {
+		name = "GFX_tech_trm_engine_gasoline_basic_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/engine_gas.dds"
+	}
+    #本地化组装汽油发动机图标
+	SpriteType = {
+		name = "GFX_tech_trm_engine_gasoline_interwar_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/engine_gas.dds"
+	}
+    #改良汽油发动机图标
+	SpriteType = {
+		name = "GFX_tech_trm_engine_gasoline_improved_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/engine_gas.dds"
+	}
+	#战间星型发动机图标
+	SpriteType = {
+		name = "GFX_tech_trm_engine_radial_interwar_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/engine_radial.dds"
+	}
+    #改良星型发动机图标
+	SpriteType = {
+		name = "GFX_tech_trm_engine_radial_improved_chi_medium"
+		texturefile = "gfx/interface/technologies/land/TRM/engine_radial.dds"
+	}
+
+} #EOF

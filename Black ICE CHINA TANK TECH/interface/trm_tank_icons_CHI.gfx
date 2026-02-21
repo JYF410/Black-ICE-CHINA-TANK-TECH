@@ -1,0 +1,79 @@
+spriteTypes = {
+
+	#雷诺FT-17(初始坦克)
+	SpriteType = {
+		name = "GFX_trm_chi_armour"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_ft17.dds"
+	}
+	#菲亚特CV-33
+	SpriteType = {
+		name = "GFX_trm_tankette_tank_chassis_chi_cv33"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_tankette_cv33.dds"
+	}
+	#菲亚特CV-35
+	SpriteType = {
+		name = "GFX_trm_tankette_tank_chassis_chi_cv35"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_takette_cv35.dds"
+	}
+    #雷诺UE
+	SpriteType = {
+		name = "GFX_trm_tankette_tank_chassis_chi_ue"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_ue.dds"
+	}
+	#雷诺ZB
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_zb_1"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_zb_1.dds"
+	}	
+	#卡登·洛伊德Mk.VI
+	SpriteType = {
+		name = "GFX_trm_tankette_tank_chassis_chi_cardenloyd_mkVI"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_cardenloyd_mkVI.dds"
+	}
+	#维克斯-卡登·洛伊德(VCL)水陆两栖坦克
+	SpriteType = {
+		name = "GFX_trm_tankette_tank_amphibious_chassis_chi_cardenloyd_mkVI"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_vickers_cardenloyd.dds"
+	}
+	#维克斯Mk.E型
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_vickers_mke"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_vickers_mke.dds"
+	}
+	#T-26B(1933型)
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_t26b_1"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_t26b_1.dds"
+	}
+	#T-26B(1937型)
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_t26b_2"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_t26b_2.dds"
+	}
+	#I号坦克A型
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_panzer1a"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer1a.dds"
+	}
+	#II号坦克A型
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_panzer2a"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer2a.dds"
+	}
+	#III号坦克A型
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_panzer3a"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer3a.dds"
+	}
+	#美国M3A3型
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_m3a3"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_m3a3.dds"
+	}
+	#美国M4A4型
+	SpriteType = {
+		name = "GFX_trm_medium_tank_chassis_chi_m4a4"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_m4a4.dds"
+	}
+
+}

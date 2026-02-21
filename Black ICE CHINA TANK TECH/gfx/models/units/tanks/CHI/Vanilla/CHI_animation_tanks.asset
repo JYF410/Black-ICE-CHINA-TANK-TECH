@@ -1,0 +1,39 @@
+### Panzer I A
+animation = {
+	name = "CHI_light_tank_Panzer_I_A_attack_animation"
+	file = "CHI_light_tank_Panzer_I_A_attack.anim"
+}
+animation = {
+	name = "CHI_light_tank_Panzer_I_A_idle_animation"
+	file = "CHI_light_tank_Panzer_I_A_idle.anim"
+}
+animation = {
+	name = "CHI_light_tank_Panzer_I_A_moving_animation"
+	file = "CHI_light_tank_Panzer_I_A_moving.anim"
+}
+##２号戦車abc型
+animation = {
+	name = "geo_panzer2abc_idle_animation"
+	file = "geo_panzer2abc_idle.anim"
+}
+animation = {
+	name = "geo_panzer2abc_move_animation"
+	file = "geo_panzer2abc_move.anim"
+}
+animation = {
+	name = "geo_panzer2abc_attack_animation"
+	file = "geo_panzer2abc_attack.anim"
+}
+##２号戦車
+animation = {
+	name = "geo_panzer2_idle_animation"
+	file = "geo_panzer2_idle.anim"
+}
+animation = {
+	name = "geo_panzer2_move_animation"
+	file = "geo_panzer2_move.anim"
+}
+animation = {
+	name = "geo_panzer2_attack_animation"
+	file = "geo_panzer2_attack.anim"
+}

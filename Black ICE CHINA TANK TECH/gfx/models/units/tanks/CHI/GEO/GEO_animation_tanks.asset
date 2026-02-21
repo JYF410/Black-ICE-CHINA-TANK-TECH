@@ -1,0 +1,94 @@
+#维克斯MK.E
+animation = {
+	name = "CHI_light_tank_vickers6t_idle_animation"
+	file = "CHI_light_tank_vickers6t_idle.anim"
+}
+animation = {
+	name = "CHI_light_tank_vickers6t_move_animation"
+	file = "CHI_light_tank_vickers6t_move.anim"
+}
+animation = {
+	name = "CHI_light_tank_vickers6t_attack_animation"
+	file = "CHI_light_tank_vickers6t_attack.anim"
+}
+#CV33/#CV35
+animation = {
+	name = "geo_l3_idle_animation"
+	file = "geo_l3_idle.anim"
+}
+animation = {
+	name = "geo_l3_move_animation"
+	file = "geo_l3_move.anim"
+}
+animation = {
+	name = "geo_l3_attack_animation"
+	file = "geo_l3_attack.anim"
+}
+
+#雷诺ZB
+animation = {
+	name = "geo_l6_idle_animation"
+	file = "geo_l6_idle.anim"
+}
+animation = {
+	name = "geo_l6_move_animation"
+	file = "geo_l6_move.anim"
+}
+animation = {
+	name = "geo_l6_attack_animation"
+	file = "geo_l6_attack.anim"
+}
+
+#M4A4
+animation = {
+	name = "geo_m4_sherman_attack_animation"
+	file = "geo_m4_sherman_attack.anim"
+}
+animation = {
+	name = "geo_m4_sherman_idle_animation"
+	file = "geo_m4_sherman_idle.anim"
+}
+animation = {
+	name = "geo_m4_sherman_move_animation"
+	file = "geo_m4_sherman_move.anim"
+}
+
+#II号坦克A型（GEO）
+animation = {
+	name = "geo_panzer2abc_idle_animation"
+	file = "geo_panzer2abc_idle.anim"
+}
+animation = {
+	name = "geo_panzer2abc_move_animation"
+	file = "geo_panzer2abc_move.anim"
+}
+animation = {
+	name = "geo_panzer2abc_attack_animation"
+	file = "geo_panzer2abc_attack.anim"
+}
+#II号坦克C/F型（GEO）
+animation = {
+	name = "geo_panzer2_idle_animation"
+	file = "geo_panzer2_idle.anim"
+}
+animation = {
+	name = "geo_panzer2_move_animation"
+	file = "geo_panzer2_move.anim"
+}
+animation = {
+	name = "geo_panzer2_attack_animation"
+	file = "geo_panzer2_attack.anim"
+}
+#III号坦克A型（GEO）
+animation = {
+	name = "geo_panzer3_idle_animation"
+	file = "geo_panzer3_idle.anim"
+}
+animation = {
+	name = "geo_panzer3_move_animation"
+	file = "geo_panzer3_move.anim"
+}
+animation = {
+	name = "geo_panzer3_attack_animation"
+	file = "geo_panzer3_attack.anim"
+}

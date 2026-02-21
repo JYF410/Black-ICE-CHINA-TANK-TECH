@@ -1,0 +1,166 @@
+
+
+
+spriteTypes = {
+
+	###### BICE Nation Specific ######
+	spriteType = {
+		name = "GFX_trm_armour_chi_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/armour_folder_icon.dds"
+	}
+
+	###### TRM
+	#中国国民革命军坦克科技-不可研发按钮(小方形)
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_trm_unavailable_item_bg.dds"
+	}
+	#中国国民革命军坦克科技-可研发按钮(小方形)
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_trm_available_item_bg.dds"
+	}
+	#中国国民革命军坦克科技-已研发按钮(小方形)
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_trm_researched_item_bg.dds"
+	}
+	#中国国民革命军坦克科技-研发中按钮(小方形)
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_trm_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#######################
+	### CHI-folders ###
+	## CHI Armor ##
+	spriteType = {
+		name = "GFX_chi_tank_folder_tab" #对应GUI文件第24710行
+		textureFile = "gfx//interface//techtree//techtree_chi_tank_tab.dds"
+		noOfFrames = 2		
+	}
+
+	#中国国民革命军坦克研发按钮UI
+	#ARMOUR
+	#SMALL
+	spriteType = {
+		name = "GFX_technology_armour_folder_special_project_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_available_item_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_technology_armour_folder_special_project_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_armour_folder_special_project_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_armour_folder_special_project_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//technology_special_project_small_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#LONG
+	spriteType = {
+		name = "GFX_technology_armour_folder_special_project_available_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_big_available_item_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_technology_armour_folder_special_project_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_big_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_armour_folder_special_project_researched_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_big_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_armour_folder_special_project_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//technology_special_project_big_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#中国国民革命军坦克特殊工程按钮UI
+	#TRM CHI
+	#SMALL
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_available_item_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//technology_special_project_small_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#LONG
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_available_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_big_available_item_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_big_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_researched_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_big_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_trm_armour_chi_folder_special_project_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//technology_special_project_big_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+}

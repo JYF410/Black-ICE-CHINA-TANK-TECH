@@ -1,0 +1,162 @@
+equipments = {
+
+	################################################################################################################
+	#美国M4A4型底盘
+	trm_medium_tank_chassis_chi_m4a4 = {
+		derived_variant_name = trm_medium_tank_chassis_chi_m4a4 #引用文件trm_armour_chi
+		year = 1944
+		archetype = trm_medium_tank_chassis
+		priority = 6001
+		visual_level = 1 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_medium_tank_chi_m4_turret #M4铸造炮塔(早期型)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = {
+				required = no
+				allowed_module_categories = {
+					trm_weapon_coax_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(同轴)
+				}
+			}
+			fixed_trm_tank_hull_gun_slot = {
+				required = no
+				allowed_module_categories = {
+					trm_weapon_hull_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(航向)
+				}
+			}
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_chrysler_RG_0425 #克莱斯勒A57型30L四冲程汽油发动机(425hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_050
+					trm_armour_055
+					trm_armour_060
+					trm_armour_065
+					trm_armour_070
+					trm_armour_075
+					trm_armour_080
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_sloped #倾斜装甲
+					trm_armour_design_rounded #弧形装甲
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
+		}
+		module_count_limit = {
+			category = trm_weapon_mg_chi_m2 #勃朗宁M2式12.7mm重机枪
+			count < 2 #配件数量限制<2
+		}
+		build_cost_ic = 4.65
+		reliability = 0.95
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 6
+			tank_production = 6
+		}
+		manpower = 3
+	}
+	################################################################################################################
+	#III号坦克A型底盘
+	trm_medium_tank_chassis_chi_panzer3a = {
+		derived_variant_name = trm_medium_tank_chassis_chi_panzer3a #引用文件trm_armour_chi
+		year = 1938
+		archetype = trm_medium_tank_chassis
+		priority = 6002
+		visual_level = 2
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_medium_tank_chi_panzer3a_turret #III号坦克炮塔(手动)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = {
+				required = no
+				allowed_module_categories = {
+					trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
+					trm_weapon_coax_mg_chi_mg34_x2 #毛瑟MG34式7.92mm机枪(同轴/双联装)
+				}
+			}
+			fixed_trm_tank_hull_gun_slot = {
+				required = no
+				allowed_module_categories = {
+					trm_weapon_hull_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(航向)
+				}
+			}
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_Maybach_G_0250 #迈巴赫HL108TR12缸水冷汽油发动机
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_015
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_basic #垂直装甲(中坦)
+					trm_armour_design_partial_sloped #部分倾斜装甲(中坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+			special_type_slot_6 = inherit
+		}
+		build_cost_ic = 4.451
+		reliability = 0.62
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 5
+			tank_production = 6
+		}
+		manpower = 2
+	}
+}

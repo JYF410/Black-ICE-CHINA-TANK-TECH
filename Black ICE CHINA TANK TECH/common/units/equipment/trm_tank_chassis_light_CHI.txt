@@ -1,0 +1,511 @@
+#国民党轻型坦克底盘参数
+equipments = {
+	
+	################################################################################################################
+	##雷诺FT-17底盘
+	trm_light_tank_chassis_chi_ft17 = {
+		derived_variant_name = trm_light_tank_equipment_chi_ft17 #引用文件trm_armour_chi
+		year = 1917
+		archetype = trm_light_tank_chassis
+		priority = 5001
+		visual_level = 1 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = { #对应文件01_tank_modules/category
+					trm_light_tank_chi_ft17_turret #FT-17 机枪塔(手动)
+					trm_light_tank_chi_ft17_turret_gun #FT-17 炮塔(手动)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = inherit
+			fixed_trm_tank_hull_gun_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_renault_G_0035 #雷诺4.5L四缸汽油机(35hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_006
+					trm_armour_009
+					trm_armour_012
+					trm_armour_015
+					trm_armour_020
+					trm_armour_025
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic #垂直装甲(轻坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		build_cost_ic = 2.85
+		reliability = 0.6
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 2
+			tank_production = 2
+		}
+		manpower = 1
+	}
+	################################################################################################################
+	##雷诺ZB底盘
+	trm_light_tank_chassis_chi_zb_1 = {
+		derived_variant_name = trm_light_tank_equipment_chi_zb_1 #引用文件trm_armour_chi
+		year = 1936
+		archetype = trm_light_tank_chassis
+		priority = 5002
+		visual_level = 2 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+	}
+	################################################################################################################
+	##维克斯Mk.E型底盘
+	trm_light_tank_chassis_chi_vickers_mke = {
+		derived_variant_name = trm_light_tank_equipment_chi_vickers_mke
+		year = 1936
+		archetype = trm_light_tank_chassis
+		parent = trm_light_tank_chassis_chi_vickers_mke
+		priority = 5003
+		visual_level = 3 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_light_tank_chi_vickers_e_turret #维克斯Mk.E型炮塔(手动)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = inherit
+			fixed_trm_tank_hull_gun_slot = inherit
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_jaguar_G_0080 #阿姆斯特朗-西德利“美洲豹”四缸风冷汽油发动机(80hp)
+					trm_engine_AEC_G_0095 #AEC四缸水冷汽油发动机(95hp)
+					trm_engine_Phantom_G_0125 #劳斯莱斯幻影II六缸水冷汽油发动机(125hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_009
+					trm_armour_012
+					trm_armour_015
+					trm_armour_020
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic  #垂直装甲(轻坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		build_cost_ic = 3.356
+		reliability = 0.65
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 3
+			tank_production = 2
+		}
+		manpower = 1
+	}
+	################################################################################################################
+	##T-26B(1933型)底盘
+	trm_light_tank_chassis_chi_t26b_1 = {
+		derived_variant_name = trm_light_tank_equipment_chi_t26b_1 #引用文件trm_armour_chi
+		year = 1933
+		archetype = trm_light_tank_chassis
+		priority = 5004
+		visual_level = 4 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = { #坦克炮塔插槽
+				required = yes
+				allowed_module_categories = { #对应文件01_tank_modules/category
+					trm_light_tank_chi_t26_turret_1 #T-26B炮塔(1933型)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = inherit
+			fixed_trm_tank_hull_gun_slot = inherit
+			fixed_trm_tank_engine_slot = { #坦克引擎插槽
+				required = yes
+				allowed_module_categories = { #对应文件01_tank_modules/category
+					trm_engine_jaguar_G_0080 #阿姆斯特朗-西德利“美洲豹”四缸风冷汽油发动机(80hp)
+					trm_engine_GAZT_G_0090 #GAZT-26型四缸风冷汽油发动机(90hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_009
+					trm_armour_012
+					trm_armour_015
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic #垂直装甲(轻坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		build_cost_ic = 3.55
+		reliability = 0.65
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 3
+			tank_production = 3
+		}
+		manpower = 1
+	}
+	################################################################################################################
+	##T-26B(1937型)底盘
+	trm_light_tank_chassis_chi_t26b_2 = {
+		derived_variant_name = trm_light_tank_equipment_chi_t26b_2
+		year = 1937
+		archetype = trm_light_tank_chassis
+		priority = 5005
+		visual_level = 5 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = { #坦克炮塔插槽
+				required = yes
+				allowed_module_categories = {  #对应文件01_tank_modules/category
+					trm_light_tank_chi_t26_turret_2 #T-26B炮塔(1937型)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = inherit
+			fixed_trm_tank_hull_gun_slot = {
+				required = no
+				allowed_module_categories = {	
+					trm_weapon_hull_mg_chi #捷格加廖夫7.62mmDT机枪(高射)
+				}
+			}
+			fixed_trm_tank_engine_slot = { #坦克引擎插槽
+				required = yes
+				allowed_module_categories = { #对应文件01_tank_modules/category
+					trm_engine_GAZT_G_0090 #GAZT-26型四缸风冷汽油发动机(90hp)
+					trm_engine_GAZT_G_0097 #GAZT-26改进型四缸水冷汽油发动机(97hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_009
+					trm_armour_012
+					trm_armour_015
+					trm_armour_020
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic #垂直装甲(轻坦)
+					trm_armour_design_light_partial_sloped #部分倾斜装甲(轻坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		module_count_limit = {
+			category = trm_special_offset_mg_chi #捷格加廖夫7.62mmDT型车载机枪(高射)
+			count < 2 #配件数量限制<2
+		}
+		build_cost_ic = 3.65
+		reliability = 0.70
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 4
+			tank_production = 4
+		}
+		manpower = 1
+	}
+	################################################################################################################
+	##I号坦克A型底盘
+	trm_light_tank_chassis_chi_panzer1a = {
+		derived_variant_name = trm_light_tank_equipment_chi_panzer1a #科技树界面底盘名称
+		year = 1936
+		archetype = trm_light_tank_chassis
+		priority = 5006
+		visual_level = 6 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_light_tank_chi_panzer1a_turret #I号坦克机枪塔(手动)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = inherit #同轴机枪槽
+			fixed_trm_tank_hull_gun_slot = inherit #航向机枪槽
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_krupp_G_0060 #克虏伯M305四缸风冷汽油发动机(60hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_012
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic
+					trm_armour_design_light_partial_sloped
+					trm_armour_design_light_sloped
+					trm_armour_design_light_rounded
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		build_cost_ic = 3.204
+		reliability = 0.58
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 3
+			tank_production = 3
+		}
+		manpower = 1
+	}
+	##II号坦克A型底盘
+	trm_light_tank_chassis_chi_panzer2a = {
+		derived_variant_name = trm_light_tank_equipment_chi_panzer2a #科技树界面底盘名称
+		year = 1938
+		archetype = trm_light_tank_chassis
+		priority = 5008
+		visual_level = 8
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_light_tank_chi_panzer2a_turret #II号坦克炮塔(手动)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = { #同轴机枪槽
+				required = no
+				allowed_module_categories = {
+					trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
+				}
+			}
+			fixed_trm_tank_hull_gun_slot = inherit #航向机枪槽
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_Maybach_G_0120 #迈巴赫HL57型水冷汽油发动机(120hp)
+					trm_engine_Maybach_G_0140 #迈马赫HL62型水冷汽油发动机(140hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_006
+					trm_armour_009
+					trm_armour_012
+					trm_armour_015
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic #垂直装甲(轻坦)
+					trm_armour_design_light_partial_sloped #部分倾斜装甲(轻坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		build_cost_ic = 3.452
+		reliability = 0.67
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 4
+			tank_production = 4
+		}
+		manpower = 1
+	}
+	################################################################################################################
+	##美国M3A3型底盘
+	trm_light_tank_chassis_chi_m3a3 = {
+		derived_variant_name = trm_light_tank_equipment_chi_m3a3 #引用文件trm_armour_chi
+		year = 1943
+		archetype = trm_light_tank_chassis
+		parent = trm_light_tank_chassis_chi_m3a3
+		family = trm_light_tank_chassis_chi_m3a3
+		priority = 5007
+		visual_level = 7 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_light_tank_chi_m5_turret #M5炮塔(电动)
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = inherit
+			fixed_trm_tank_hull_gun_slot = {
+				required = no
+				allowed_module_categories = {
+					trm_weapon_hull_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(航向)
+				}
+			}
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_continental_RG_0250 #大陆W-670-9A七缸星型风冷汽油发动机（250hp）
+					trm_engine_guiberson_RG_0265 #吉伯森T-1020-4九缸星型风冷柴油发动机（265hp）
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_025
+					trm_armour_030
+					trm_armour_035
+					trm_armour_040
+					trm_armour_045
+					trm_armour_050
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic #垂直装甲（轻坦）
+					trm_armour_design_light_partial_sloped #部分倾斜装甲（轻坦）
+					trm_armour_design_light_sloped #小幅度倾斜装甲设计
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		module_count_limit = {
+			category = trm_special_aamg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(高射)
+			count < 2 #配件数量限制<2
+		}
+		build_cost_ic = 3.898
+		reliability = 0.83
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 5
+			tank_production = 5
+		}
+		manpower = 2
+	}
+}

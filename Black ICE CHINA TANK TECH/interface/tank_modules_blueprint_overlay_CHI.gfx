@@ -1,0 +1,100 @@
+#中国国民革命军坦克底盘设计蓝图（对应文件：interface\equipmentdesigner\tanks\CHI\trm_chi_tank_chassis_tankette_tank.gui）
+spriteTypes = {
+	
+	#超轻型坦克设计蓝图
+	spriteType = {
+		name = "GFX_TC_tankette_tank_chassis_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ita/ita_light_tank_destroyer_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_tankette_tank_chassis_armor_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ita/ita_light_tank_destroyer_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_tankette_tank_chassis_engine_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ita/ita_light_tank_destroyer_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_tankette_tank_chassis_main_armament_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ita/ita_light_tank_destroyer_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_tankette_tank_chassis_suspension_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ita/ita_light_tank_destroyer_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_tankette_tank_chassis_turret_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ita/ita_light_tank_destroyer_turret.dds"
+		legacy_lazy_load = no
+	}
+	
+	#轻型坦克设计蓝图
+	spriteType = {
+		name = "GFX_TC_light_tank_chassis_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/sov/sov_light_tank_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_light_tank_chassis_armor_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/sov/sov_light_tank_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_light_tank_chassis_engine_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/sov/sov_light_tank_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_light_tank_chassis_main_armament_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/sov/sov_light_tank_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_light_tank_chassis_suspension_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/sov/sov_light_tank_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_light_tank_chassis_turret_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/sov/sov_light_tank_turret.dds"
+		legacy_lazy_load = no
+	}
+
+	#中型坦克设计蓝图
+	spriteType = {
+		name = "GFX_TC_medium_tank_chassis_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ger/ger_medium_tank_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_medium_tank_chassis_armor_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ger/ger_medium_tank_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_medium_tank_chassis_engine_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ger/ger_medium_tank_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_medium_tank_chassis_main_armament_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ger/ger_medium_tank_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_medium_tank_chassis_suspension_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ger/ger_medium_tank_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_medium_tank_chassis_turret_type_slot_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/ger/ger_medium_tank_turret.dds"
+		legacy_lazy_load = no
+	}
+
+}

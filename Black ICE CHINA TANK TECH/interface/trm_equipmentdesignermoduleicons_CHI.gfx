@@ -1,0 +1,321 @@
+spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
+	################################################################################################################
+	#FT-17 机枪塔(手动)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_ft17_turret_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_close_support_gun.dds"
+	}
+	#FT-17 炮塔(手动)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_ft17_turret_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_close_support_gun.dds"
+	}
+	#布尔诺兵工厂ZB-26式7.92mm轻机枪
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_mg_chi_01_zb26"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#哈奇开斯M1914型8mm重机枪
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_mg_chi_02_hotchkiss"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_machine_gun.dds"
+	}
+	#皮托SA-18型37mm坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_37_sa18"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun.dds"
+	}
+	#雷诺4.5L四缸汽油机(35hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_renault_G_0035"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas.dds"
+	}
+	################################################################################################################
+	#卡登·洛伊德Mk.VI固定战斗室
+	spriteType = {
+		name = "GFX_SMI_trm_tankette_tank_chi_cardenloyd_casemate"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/turret_construction/trm_turret_shielded.dds"
+	}
+	#维克斯7.7mm水冷重机枪
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_mg_chi_vickers"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_machine_gun.dds"
+	}
+	#福特T型四缸汽油发动机(22.5hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_ford_G_00225"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas.dds"
+	}
+	#梅德斯ESTB六缸水冷汽油发动机(88hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_ESTB_G_0088"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas.dds"
+	}
+	################################################################################################################
+	#Mk.E炮塔
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_vickers_e_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_two_man_turret.dds"
+	}
+	#维克斯-卡登·洛伊德(VCL)型机枪塔
+	spriteType = {
+		name = "GFX_SMI_trm_tankette_tank_chi_vcl_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_close_support_gun.dds"
+	}	
+	#维克斯QF3型47mm/32倍径坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_qf3_47"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun.dds"
+	}
+	#维克斯7.7mm水冷重机枪(同轴)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_coax_mg_chi_vickers"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_machine_gun.dds"
+	}
+	#阿姆斯特朗-西德利“美洲豹”四缸风冷汽油发动机(80hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_jaguar_G_0080"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas_80.dds"
+	}
+	#AEC四缸水冷汽油发动机(95hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_AEC_G_0095"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas.dds"
+	}
+	#劳斯莱斯幻影II六缸水冷汽油发动机(125hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_Phantom_G_0125"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas.dds"
+	}
+	#维克斯-卡登·洛伊德(VCL)两栖浮渡设备
+	spriteType = {
+		name = "GFX_SMI_trm_special_schwimmpanzer_chi"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_amphibious_drive.dds"
+	}
+	################################################################################################################
+	#T-26B炮塔(1933型)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_t26_turret_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_two_man_turret.dds"
+	}
+	#T-26B炮塔(1937型)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_t26_turret_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_two_man_turret.dds"
+	}
+	#第八火炮工厂M1932型45mm20-K坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_45_20k32"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
+	}
+	#第八火炮工厂M1934型45mm20-K坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_45_20k34"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
+	}
+	#第八火炮工厂M1938型45mm20-K坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_45_20k38"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+	}
+	#BR-240型45mm穿甲榴弹弹(APHEBC)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_45_aphebc"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_ap.dds"
+	}
+	#45mm硬芯穿甲弹(APCR)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_45_apcr"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_apcr.dds"
+	}
+	#捷格加廖夫7.62mmDT型车载机枪(同轴)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_coax_mg_chi_dt"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#捷格加廖夫7.62mmDT型车载机枪(后向)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_hull_mg_chi_dt"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#捷格加廖夫7.62mmDT型车载机枪(高射)
+	spriteType = {
+		name = "GFX_SMI_trm_special_offset_mg_chi_dt"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_additional_machine_guns.dds"
+	}
+	#嘎斯GAZT-26型四缸风冷汽油发动机(90hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_GAZT_G_0090"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas_90.dds"
+	}
+	#嘎斯GAZT-26改进型四缸水冷汽油发动机(97hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_GAZT_G_0097"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas.dds"
+	}
+	################################################################################################################
+	#I号坦克机枪塔(手动)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_panzer1a_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_one_man_turret.dds"
+	}
+	#西蒙&祖尔MG13式7.92mm机枪(双联装)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_mg_chi_mg13_x2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#克虏伯M305四缸风冷汽油发动机(60hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_krupp_G_0060"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas_60.dds"
+	}
+	################################################################################################################
+	#II号坦克机枪塔(手动)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_panzer2a_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_one_man_turret.dds"
+	}
+	#莱茵金属KwK30型20mmL/55机关炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_KwK20"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_autoloader.dds"
+	}
+	#毛瑟MG34式7.92mm机枪(同轴)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_coax_mg_chi_mg34_x1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#Sprgr.39型20mm高爆弹(HE)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_kwk20_HE"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_heat.dds"
+	}
+	#PzGr.40型20mm硬芯穿甲弹(APCR)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_kwk20_AP"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_apcr.dds"
+	}
+	#迈巴赫HL57型水冷汽油发动机(120hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_Maybach_G_0120"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas_120.dds"
+	}
+	#迈马赫HL62型水冷汽油发动机(140hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_Maybach_G_0140"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas_140.dds"
+	}
+	################################################################################################################
+	#III号坦克炮塔(手动)
+	spriteType = {
+		name = "GFX_SMI_trm_medium_tank_chi_panzer3a_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_three_man_turret.dds"
+	}
+	#莱茵金属KwK36型37mmL/45坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_KwK37"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_small_cannon.dds"
+	}
+	#毛瑟MG34式7.92mm机枪(同轴)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_coax_mg_chi_mg34_x1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon.dds"
+	}
+	#毛瑟MG34式7.92mm机枪(同轴/双联装)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_coax_mg_chi_mg34_x2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_2.dds"
+	}
+	#毛瑟MG34式7.92mm机枪(航向)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_hull_mg_chi_mg34_x1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}	
+	#PzGr.型37mm穿甲榴弹(APHE)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_kwk37_APHE"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_ap.dds"
+	}
+	#PzGr.40型37mm硬芯穿甲弹(APCR)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_kwk37_APCR"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_apcr.dds"
+	}
+	#迈巴赫HL108TR12缸水冷汽油发动机
+	spriteType = {
+		name = "GFX_SMI_trm_engine_Maybach_G_0250"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_gas/trm_engine_gas_250.dds"
+	}
+	################################################################################################################
+	#M5炮塔(电动)
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_m5_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_two_man_turret.dds"
+	}
+	#M5型37mmL/53坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_37_m5"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_medium_main_armament.dds"
+	}
+	#勃朗宁M1919A4型7.62mm车载机枪(同轴)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_coax_mg_chi_m1919"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#勃朗宁M1919A4型7.62mm车载机枪(航向)
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_hull_mg_chi_m1919"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#勃朗宁M1919A4型7.62mm车载机枪(高射)
+	spriteType = {
+		name = "GFX_SMI_trm_special_aamg_chi_m1919"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_additional_machine_guns.dds"
+	}
+	#大陆W-670-9A七缸星型风冷汽油发动机（250hp）
+	spriteType = {
+		name = "GFX_SMI_trm_engine_continental_RG_0250"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_radial/trm_engine_radial_250.dds"
+	}
+	#吉伯森T-1020-4九缸星型风冷柴油发动机（265hp）
+	spriteType = {
+		name = "GFX_SMI_trm_engine_guiberson_RG_0265"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_radial/trm_engine_radial.dds"
+	}
+	################################################################################################################
+	#M4铸造炮塔(早期型)
+	spriteType = {
+		name = "GFX_SMI_trm_medium_tank_chi_m4_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_three_man_turret.dds"
+	}
+	#M3型75mmL/40坦克炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_c_chi_75_m3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_medium_main_armament.dds"
+	}
+	#勃朗宁M2型12.7mm重机枪
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_mg_chi_m2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_additional_machine_guns.dds"
+	}
+	#M72型75mm穿甲弹(AP)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_75_m72"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_ap.dds"
+	}
+	#M61型75mm被帽风帽穿甲弹(APCBC)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_75_m61"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_apcr.dds"
+	}
+	#M48型75mm高爆弹(HE)
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_75_m48"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_heat.dds"
+	}
+	#克莱斯勒A57型30L四冲程汽油发动机(425hp)
+	spriteType = {
+		name = "GFX_SMI_trm_engine_chrysler_RG_0425"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/engine_radial/trm_engine_radial_425.dds"
+	}
+}
