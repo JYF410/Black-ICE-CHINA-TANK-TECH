@@ -164,13 +164,13 @@ CHI = {
 		}
 	}
 	#III号坦克A型底盘
-	trm_light_tank_chassis_chi_panzer3a = {
+	trm_medium_tank_chassis_chi_panzer3a = {
 		pool = {
 			icons = {
-				GFX_tech_trm_light_tank_chassis_chi_panzer3a_medium
+				GFX_tech_trm_medium_tank_chassis_chi_panzer3a_medium
 			}
 			models = {
-				"CHI_trm_light_armor_2_entity"
+				"CHI_trm_medium_armor_2_entity"
 			}
 		}
 	}

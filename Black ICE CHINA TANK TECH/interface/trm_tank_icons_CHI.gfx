@@ -62,7 +62,7 @@ spriteTypes = {
 	}
 	#III号坦克A型
 	SpriteType = {
-		name = "GFX_trm_light_tank_chassis_chi_panzer3a"
+		name = "GFX_trm_medium_tank_chassis_chi_panzer3a"
 		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer3a.dds"
 	}
 	#美国M3A3型

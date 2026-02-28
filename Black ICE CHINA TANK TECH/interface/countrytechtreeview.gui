@@ -23215,12 +23215,6 @@ guiTypes = {
 			centerposition = yes
 			alwaystransparent = yes
 		}
-
-		iconType = {
-			name = "bonus_icon"
-			position = { x=115 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
 		
 		instantTextBoxType = {
 			name = "Name"

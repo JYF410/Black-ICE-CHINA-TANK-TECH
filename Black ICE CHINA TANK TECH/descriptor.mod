@@ -11,5 +11,5 @@ dependencies={
 }
 name="Black ICE CHINA TANK TECH 黑冰中国国民革命军坦克科技"
 picture="thumbnail.png"
-supported_version="1.16.*"
+supported_version="1.17.*"
 remote_file_id="3463196432"
