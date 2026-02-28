@@ -427,6 +427,83 @@ equipments = {
 		}
 		manpower = 1
 	}
+	##II号坦克C型底盘
+	trm_light_tank_chassis_chi_panzer2c = {
+		derived_variant_name = trm_light_tank_equipment_chi_panzer2c #科技树界面底盘名称
+		year = 1939
+		archetype = trm_light_tank_chassis
+		parent = trm_light_tank_chassis_chi_panzer2a
+		priority = 3103
+		visual_level = 9
+		module_slots = {
+			fixed_trm_tank_turret_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_light_tank_chi_panzer2a_turret #II号坦克炮塔(手动)
+					trm_light_tank_chi_panzer2_aa_open
+					trm_light_tank_chi_panzer2_superstructure_open
+				}
+			}
+			fixed_trm_tank_main_gun_slot = inherit
+			fixed_trm_tank_ammunition_slot = inherit
+			fixed_trm_tank_coax_gun_slot = { #同轴机枪槽
+				required = no
+				allowed_module_categories = {
+					trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
+				}
+			}
+			fixed_trm_tank_hull_gun_slot = inherit #航向机枪槽
+			fixed_trm_tank_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_engine_Maybach_G_0120 #迈巴赫HL57型水冷汽油发动机(120hp)
+					trm_engine_Maybach_G_0140 #迈马赫HL62型水冷汽油发动机(140hp)
+				}
+			}
+			fixed_trm_tank_transmission_slot = inherit
+			fixed_trm_tank_gearbox_slot = inherit
+			fixed_trm_tank_suspension_slot = inherit
+			fixed_trm_tank_armor_thickness_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_006
+					trm_armour_009
+					trm_armour_012
+					trm_armour_015
+					trm_armour_020
+					trm_armour_025
+					trm_armour_030
+				}
+			}
+			fixed_trm_tank_armor_design_slot = {
+				required = yes
+				allowed_module_categories = {
+					trm_armour_design_light_basic #垂直装甲(轻坦)
+					trm_armour_design_light_partial_sloped #部分倾斜装甲(轻坦)
+				}
+			}
+			fixed_trm_tank_armor_distribution_slot = inherit
+			fixed_trm_tank_armor_construction_slot = inherit
+			fixed_trm_tank_armor_construction_turret_slot = inherit
+			fixed_trm_tank_radio_slot = inherit
+			fixed_trm_tank_ergonomics_slot = inherit
+			fixed_trm_tank_construction_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		build_cost_ic = 2.652
+		reliability = 0.72
+		hardness = 0.5
+		armor_value = 0
+		resources = {
+			steel = 4
+			tank_production = 4
+		}
+		manpower = 1
+	}
 	################################################################################################################
 	##美国M3A3型底盘
 	trm_light_tank_chassis_chi_m3a3 = {

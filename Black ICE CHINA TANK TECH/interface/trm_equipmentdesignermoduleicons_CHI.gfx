@@ -175,6 +175,16 @@ spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
 		name = "GFX_SMI_trm_light_tank_chi_panzer2a_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_one_man_turret.dds"
 	}
+	#II号坦克上部结构
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_panzer2c_superstructure_open"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
+	}
+	#II号坦克开放式防空炮架
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_panzer2c_aa_open"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
+	}
 	#莱茵金属KwK30型20mmL/55机关炮
 	spriteType = {
 		name = "GFX_SMI_trm_weapon_c_chi_KwK20"

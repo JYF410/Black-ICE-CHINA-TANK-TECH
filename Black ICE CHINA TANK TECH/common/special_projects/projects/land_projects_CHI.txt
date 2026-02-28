@@ -45,6 +45,52 @@ sp_land_CHI_panzer2a_tanks = {
 		sp_land_generic_reward_test_failure_2
 	}
 }
+#特殊工程：研发II号坦克C型
+sp_land_CHI_panzer2c_tanks = {
+	specialization = specialization_land
+	icon = GFX_sp_main_battle_tank
+	project_tags = sp_tag_tank
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.small
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	available = { 
+		FROM = {
+			has_completed_focus = KMT_joint_tank_dev #完成前置国策：联合开发坦克
+			has_tech = tech_trm_light_tank_chassis_chi_panzer2a #已研发II号坦克A型
+		}
+	}
+	resource_cost = {
+		resources = { 
+			steel = 12
+			chromium = 5
+			tank_production = 2
+			engine_production = 1
+		 }
+	}
+	project_output = {
+		country_effects = {
+			custom_override_tooltip = {	
+				tooltip = tech_effect|tech_trm_light_tank_chassis_chi_panzer2c
+				set_technology = {
+					tech_trm_light_tank_chassis_chi_panzer2c = 1
+					popup = yes
+				}
+			}
+		}
+	}
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+	}
+}
 #特殊工程：研发III号坦克A型
 sp_land_CHI_panzer3a_tanks = {
 	specialization = specialization_land

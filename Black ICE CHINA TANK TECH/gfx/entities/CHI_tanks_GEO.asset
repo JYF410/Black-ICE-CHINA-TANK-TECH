@@ -110,6 +110,16 @@ entity = {
 		texture_anim_speed = 0.5
 	}
 }
+#II号坦克C型（GEO）
+entity = {
+	clone = "CHI_trm_light_armor_8_entity"
+	name = "CHI_trm_light_armor_9_entity"
+	pdxmesh = "geo_panzer2_a_mesh"
+	scale = 1.1
+	game_data = {
+		texture_anim_speed = 0.5
+	}
+}
 #III号坦克A型（GEO）
 entity = {
 	name = "CHI_trm_medium_armor_2_entity"

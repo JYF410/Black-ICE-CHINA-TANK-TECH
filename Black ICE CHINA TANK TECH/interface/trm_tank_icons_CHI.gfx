@@ -60,6 +60,15 @@ spriteTypes = {
 		name = "GFX_trm_light_tank_chassis_chi_panzer2a"
 		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer2a.dds"
 	}
+	#II号坦克C型
+	SpriteType = {
+		name = "GFX_trm_light_tank_chassis_chi_panzer2c"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer2c.dds"
+	}
+	#II号突击坦克
+	#黄蜂自行火炮
+	#野牛自行火炮
+	#II号自行防空车
 	#III号坦克A型
 	SpriteType = {
 		name = "GFX_trm_medium_tank_chassis_chi_panzer3a"

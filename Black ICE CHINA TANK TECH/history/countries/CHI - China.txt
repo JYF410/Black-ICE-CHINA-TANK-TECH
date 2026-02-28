@@ -11,7 +11,6 @@ set_stability = 0.7
 set_war_support = 0.5
 set_country_flag = league_member
 set_country_flag = CHI_armor #新增中国国民革命军坦克科技
-#set_country_flag = CHI_air #新增国民党飞机科技
 set_country_flag = olympic_attendee
 save_global_event_target_as = WTT_current_china_leader
 set_global_flag = KMT_mod_enabled

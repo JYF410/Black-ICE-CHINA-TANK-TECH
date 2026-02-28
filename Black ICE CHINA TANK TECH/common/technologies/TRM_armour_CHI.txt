@@ -396,6 +396,10 @@ technologies = {
 			trm_engine_Maybach_G_0120 #迈巴赫HL57型汽油发动机(120hp)
 		}
 		path = {
+			leads_to_tech = tech_trm_light_tank_chassis_chi_panzer2c #德国II号坦克C型
+			research_cost_coeff = 1 
+		}
+		path = {
 			leads_to_tech = tech_trm_medium_tank_chassis_chi_panzer3a #德国III号坦克A型
 			research_cost_coeff = 1 
 		}
@@ -410,6 +414,45 @@ technologies = {
 		ai_will_do = { factor = 1 }
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_light_tank_chassis_chi_panzer2a }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_chassis_tt
+			custom_effect_tooltip = cat_light_armor_tt
+		}
+		categories = {
+			armor_tech
+			armor_chassis
+			cat_light_armor
+		}
+	}
+	#II号坦克C型
+	tech_trm_light_tank_chassis_chi_panzer2c = {
+		allow = {
+			if = {
+				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer2a_tanks }
+				limit = { original_tag = CHI }
+			}
+		}
+		is_special_project_tech = yes
+		enable_equipments = {
+			trm_light_tank_chassis_chi_panzer2c #引用文件\common\units\equipment\trm_tank_chassis_light
+		}
+		enable_equipment_modules = { #研发后可用的坦克武器/配件
+			trm_light_tank_chi_panzer2c_superstructure_open #II号坦克上部结构
+			trm_light_tank_chi_panzer2c_aa_open #II号坦克开放式防空炮架
+		}
+		show_equipment_icon = yes
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @CHASSIS_LIGHT9 y = @1938 } #坦克图标的坐标
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_light_tank_chassis_chi_panzer2c }
 			is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt

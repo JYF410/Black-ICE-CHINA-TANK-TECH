@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
  sp_land_CHI_panzer2a_tanks: "II号轻型坦克A型"
- sp_land_CHI_panzer2a_tanks_desc: "通过德国人提供的授权生产许可以及坦克技术支持，我们可以在国内自行组装出二号中型坦克。"
+ sp_land_CHI_panzer2a_tanks_desc: "通过德国人提供的授权生产许可以及坦克技术支持，我们可以在国内自行组装出二号轻型坦克。"
+ sp_land_CHI_panzer2c_tanks: "II号轻型坦克C型"
+ sp_land_CHI_panzer2c_tanks_desc: "通过研发和生产II号轻型坦克的经验，我们能够做出更多改装方案。"
  sp_land_CHI_panzer3a_tanks: "III号中型坦克A型"
  sp_land_CHI_panzer3a_tanks_desc: "通过德国人提供的授权生产许可以及坦克技术支持，我们可以在国内自行组装出三号中型坦克。"

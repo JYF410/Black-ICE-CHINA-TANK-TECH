@@ -62,6 +62,11 @@ spriteTypes = { #对应文件common\technologies\trm_armour_chi
 		name = "GFX_tech_trm_light_tank_chassis_chi_panzer2a_medium"
 		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer2a.dds"
 	}
+	#II号坦克C型
+	SpriteType = {
+		name = "GFX_tech_trm_light_tank_chassis_chi_panzer2c_medium"
+		texturefile = "gfx/interface/technologies/land/CHI/CHI_panzer2c.dds"
+	}
 	#III号坦克A型
 	SpriteType = {
 		name = "GFX_tech_trm_medium_tank_chassis_chi_panzer3a_medium"

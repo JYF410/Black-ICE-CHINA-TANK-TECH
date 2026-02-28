@@ -1003,6 +1003,7 @@ equipment_modules = {
 	#II号坦克机炮塔(手动)
 	trm_light_tank_chi_panzer2a_turret = {
 		category = trm_light_tank_chi_panzer2a_turret
+		gui_category = trm_light_tank_chi_panzer2_turret
 		sfx = sfx_ui_sd_module_turret
 		xp_cost = 1
 		allowed_module_categories = {
@@ -1048,6 +1049,83 @@ equipment_modules = {
 			hard_attack = 0.15
 			breakthrough = 0.075
 			fuel_consumption = 0.01
+		}
+	}
+	#II号坦克上部结构
+	trm_light_tank_chi_panzer2c_superstructure_open = {
+		category = trm_light_tank_chi_panzer2_superstructure_open
+		gui_category = trm_light_tank_chi_panzer2_turret
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_c_chi_37
+				trm_weapon_c_cze_37
+				trm_weapon_c_chi_42
+				trm_weapon_c_cze_47
+				trm_weapon_c_chi_50
+				trm_weapon_c_chi_75
+				trm_weapon_art_chi_75
+				trm_weapon_art_chi_105
+				trm_weapon_art_chi_150_short
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_open_none
+				trm_turret_construction_open_shielded
+			}
+		}
+		manpower = 3
+		add_stats = {
+			build_cost_ic = 0.992
+			reliability = 0.02
+			breakthrough = 0.5
+			defense = 1
+		}
+		multiply_stats = {
+			build_cost_ic = -0.15
+			maximum_speed = -0.022
+			soft_attack = 0.05
+			additional_collateral_damage = 0.05
+			hard_attack = 0.05
+			defense = 0.05
+			breakthrough = 0.05
+			fuel_consumption = 0.01
+		}
+	}
+	#II号坦克开放式防空炮架
+	trm_light_tank_chi_panzer2c_aa_open = {
+		category = trm_light_tank_chi_panzer2_aa_open
+		gui_category = trm_light_tank_chi_panzer2_turret
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_aa_mg_chi_15
+				trm_weapon_aa_mg_chi_15_x2
+				trm_weapon_aa_mg_chi_15_x3
+				trm_weapon_aa_ac_chi_20
+				trm_weapon_aa_ac_chi_20_x2
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_open_none
+				trm_turret_construction_open_shielded
+			}
+		}
+		manpower = 2
+		add_stats = {
+			build_cost_ic = 1.273
+			reliability = 0.02
+		}
+		multiply_stats = {
+			build_cost_ic = -0.125
+			maximum_speed = -0.022
+			soft_attack = 0.05
+			additional_collateral_damage = 0.05
+			hard_attack = 0.05
 		}
 	}
 	#莱茵金属KwK30型20mmL/55机关炮
@@ -1107,7 +1185,7 @@ equipment_modules = {
 	#Sprgr.39型20mm高爆弹(HE)
 	trm_ammo_c_chi_kwk20_HE = {
 		category = trm_ammo_c_chi_kwk20_AP
-		gui_category = trm_ammo_ac_ger_20_kwk30
+		gui_category = trm_ammo_ac_chi_20_kwk30
 		sfx = sfx_ui_sd_module_turret
 		xp_cost = 1
 		add_stats = {
@@ -1123,7 +1201,7 @@ equipment_modules = {
 	#PzGr.40型20mm硬芯穿甲弹(APCR)
 	trm_ammo_c_chi_kwk20_AP = {
 		category = trm_ammo_c_chi_kwk20_AP
-		gui_category = trm_ammo_ac_ger_20_kwk30
+		gui_category = trm_ammo_ac_chi_20_kwk30
 		sfx = sfx_ui_sd_module_turret
 		xp_cost = 1
 		add_stats = {
@@ -1347,7 +1425,7 @@ equipment_modules = {
 	#PzGr.型37mm穿甲榴弹(APHE)
 	trm_ammo_c_chi_kwk37_APHE = {
 		category = trm_ammo_c_chi_kwk37_APHE
-		gui_category = trm_ammo_c_ger_37_kwk36
+		gui_category = trm_ammo_c_chi_37_kwk36
 		sfx = sfx_ui_sd_module_turret
 		xp_cost = 1
 		add_stats = {
@@ -1365,7 +1443,7 @@ equipment_modules = {
 	#PzGr.40型37mm硬芯穿甲弹(APCR)
 	trm_ammo_c_chi_kwk37_APCR = {
 		category = trm_ammo_c_chi_kwk37_APCR
-		gui_category = trm_ammo_c_ger_37_kwk36
+		gui_category = trm_ammo_c_chi_37_kwk36
 		sfx = sfx_ui_sd_module_turret
 		xp_cost = 1
 		add_stats = {

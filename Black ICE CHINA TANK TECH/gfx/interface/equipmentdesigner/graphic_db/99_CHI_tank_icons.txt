@@ -92,6 +92,17 @@ CHI = {
 			}
 		}
 	}
+	#II号坦克C型底盘
+	trm_light_tank_chassis_chi_panzer2c = {
+		pool = {
+			icons = {
+				GFX_tech_trm_light_tank_chassis_chi_panzer2c_medium
+			}
+			models = {
+				"CHI_trm_light_armor_9_entity"
+			}
+		}
+	}
 	#############################################################################
 	##                               超轻型坦克线                               ##
 	#############################################################################
