@@ -1,7 +1,7 @@
 #特殊工程：研发II号坦克A型
 sp_land_CHI_panzer2a_tanks = {
 	specialization = specialization_land
-	icon = GFX_sp_main_battle_tank
+	icon = GFX_sp_land_CHI_panzer2a_tanks
 	project_tags = sp_tag_tank
 	prototype_time = sp_time.prototype.medium
 	complexity = sp_complexity.small
@@ -48,12 +48,12 @@ sp_land_CHI_panzer2a_tanks = {
 #特殊工程：研发II号坦克C型
 sp_land_CHI_panzer2c_tanks = {
 	specialization = specialization_land
-	icon = GFX_sp_main_battle_tank
+	icon = GFX_sp_land_CHI_panzer2c_tanks
 	project_tags = sp_tag_tank
-	prototype_time = sp_time.prototype.medium
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.small
 	breakthrough_cost = {
-		specialization_land = 1
+		specialization_land = 2
 	}
 	available = { 
 		FROM = {
@@ -94,19 +94,18 @@ sp_land_CHI_panzer2c_tanks = {
 #特殊工程：研发III号坦克A型
 sp_land_CHI_panzer3a_tanks = {
 	specialization = specialization_land
-	icon = GFX_sp_main_battle_tank
+	icon = GFX_sp_land_CHI_panzer3a_tanks
 	project_tags = sp_tag_tank
-	prototype_time = sp_time.prototype.medium
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.small
 	breakthrough_cost = {
-		specialization_land = 1
+		specialization_land = 3
 	}
 	available = { 
 		FROM = {
 			has_tech = tech_trm_light_tank_chassis_chi_panzer2a
 			has_tech = armor_industry
 			has_tech = vehicle_industry
-			has_tech = artillery_industry
 		}
 	}
 	resource_cost = {
@@ -124,6 +123,94 @@ sp_land_CHI_panzer3a_tanks = {
 				tooltip = tech_effect|tech_trm_medium_tank_chassis_chi_panzer3a
 				set_technology = {
 					tech_trm_medium_tank_chassis_chi_panzer3a = 1
+					popup = yes
+				}
+			}
+		}
+	}
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_critical_failure
+	}
+}
+#特殊工程：莱茵金属KwK30型20mmL/55机关炮
+sp_land_CHI_trm_weapon_c_chi_KwK20 = {
+	specialization = specialization_land
+	icon = GFX_sp_land_CHI_trm_weapon_c_chi_KwK20
+	project_tags = sp_tag_artillery
+	prototype_time = sp_time.prototype.short
+	complexity = sp_complexity.medium
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	available = { 
+		FROM = {
+			has_tech = artillery_industry
+		}
+	}
+	resource_cost = {
+		resources = { 
+			steel = 6
+			chromium = 3
+			artillery_production = 2
+		}
+	}
+	project_output = {
+		country_effects = {
+			custom_override_tooltip = {	
+				tooltip = tech_effect|tech_trm_weapon_c_chi_KwK20
+				set_technology = {
+					tech_trm_weapon_c_chi_KwK20 = 1
+					popup = yes
+				}
+			}
+		}
+	}
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_critical_failure
+	}
+}
+#特殊工程：莱茵金属KwK36型37mmL/45坦克炮
+sp_land_CHI_trm_weapon_c_chi_KwK37 = {
+	specialization = specialization_land
+	icon = GFX_sp_land_CHI_trm_weapon_c_chi_KwK37
+	project_tags = sp_tag_artillery
+	prototype_time = sp_time.prototype.long
+	complexity = sp_complexity.small
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+	available = { 
+		FROM = {
+			has_tech = artillery_industry2
+		}
+	}
+	resource_cost = {
+		resources = { 
+			steel = 9
+			chromium = 6
+			artillery_production = 3
+		}
+	}
+	project_output = {
+		country_effects = {
+			custom_override_tooltip = {	
+				tooltip = tech_effect|tech_trm_weapon_c_chi_KwK37
+				set_technology = {
+					tech_trm_weapon_c_chi_KwK37 = 1
 					popup = yes
 				}
 			}

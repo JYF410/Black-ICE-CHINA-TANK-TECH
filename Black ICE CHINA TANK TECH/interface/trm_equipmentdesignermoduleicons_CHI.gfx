@@ -175,25 +175,25 @@ spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
 		name = "GFX_SMI_trm_light_tank_chi_panzer2a_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_one_man_turret.dds"
 	}
-	#II号坦克上部结构
-	spriteType = {
-		name = "GFX_SMI_trm_light_tank_chi_panzer2c_superstructure_open"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
-	}
-	#II号坦克开放式防空炮架
-	spriteType = {
-		name = "GFX_SMI_trm_light_tank_chi_panzer2c_aa_open"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
-	}
 	#莱茵金属KwK30型20mmL/55机关炮
 	spriteType = {
 		name = "GFX_SMI_trm_weapon_c_chi_KwK20"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_autoloader.dds"
+	}
+	#苏罗通ST-5型20mm机关炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_aa_ac_chi_20_flak38"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_autoloader.dds"
 	}
 	#毛瑟MG34式7.92mm机枪(同轴)
 	spriteType = {
 		name = "GFX_SMI_trm_weapon_coax_mg_chi_mg34_x1"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+	}
+	#20mm弹药
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_ac_chi_20_kwk30"
+		textureFile = "gfx/interface/technologies/land/TRM/ammo.dds"
 	}
 	#Sprgr.39型20mm高爆弹(HE)
 	spriteType = {
@@ -204,6 +204,21 @@ spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
 	spriteType = {
 		name = "GFX_SMI_trm_ammo_c_chi_kwk20_AP"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/ammo/trm_ammo_apcr.dds"
+	}
+	#II号坦克上部结构
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_panzer2c_superstructure_open"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
+	}
+	#克虏伯FK18型75mmL/26野战炮
+	spriteType = {
+		name = "GFX_SMI_trm_weapon_art_chi_75_fk18"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_heavy_main_armament.dds"
+	}
+	#II号坦克开放式防空炮架
+	spriteType = {
+		name = "GFX_SMI_trm_light_tank_chi_panzer2c_aa_open"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
 	}
 	#迈巴赫HL57型水冷汽油发动机(120hp)
 	spriteType = {
@@ -224,7 +239,7 @@ spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
 	#莱茵金属KwK36型37mmL/45坦克炮
 	spriteType = {
 		name = "GFX_SMI_trm_weapon_c_chi_KwK37"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_small_cannon.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_medium_main_armament.dds"
 	}
 	#毛瑟MG34式7.92mm机枪(同轴)
 	spriteType = {
@@ -240,7 +255,12 @@ spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
 	spriteType = {
 		name = "GFX_SMI_trm_weapon_hull_mg_chi_mg34_x1"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
-	}	
+	}
+	#37mm弹药
+	spriteType = {
+		name = "GFX_SMI_trm_ammo_c_chi_37_kwk36"
+		textureFile = "gfx/interface/technologies/land/TRM/ammo.dds"
+	}
 	#PzGr.型37mm穿甲榴弹(APHE)
 	spriteType = {
 		name = "GFX_SMI_trm_ammo_c_chi_kwk37_APHE"

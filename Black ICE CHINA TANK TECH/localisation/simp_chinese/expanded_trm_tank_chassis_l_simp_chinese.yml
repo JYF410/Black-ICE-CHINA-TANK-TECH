@@ -61,7 +61,14 @@ trm_light_tank_equipment_chi_panzer2a: "II号坦克A型"
 trm_light_tank_chassis_chi_panzer2c: "MAN PzKpfw.II C型"
 trm_light_tank_chassis_chi_panzer2c_desc: "C型作为量产型的范本在1937年3月开始生产，最后制造的C型坦克改用独立式板弹簧悬挂装置，每侧5个中直径负重轮和4个托带轮，这成为它的重要特征，而C型最后生产型将车体前部又改回和a1型一样的圆弧形，最大装甲厚度15毫米，C型（1938年6月投产）为了提升防护性能而在驾驶室前部和炮塔前部加装了20毫米的附加装甲（用螺栓固定）。"
 trm_light_tank_equipment_chi_panzer2c: "II号坦克C型"
-trm_light_tank_aa_equipment_chi_panzer2c: "MAN PzKpfw.II C型"
+#II号坦克C型衍生车
+trm_light_tank_artillery_chassis_chi_panzer2c: "II号坦克自行火炮底盘"
+trm_light_tank_artillery_equipment_chi_panzer2c: "75mm自行火炮"
+trm_light_tank_destroyer_chassis_chi_panzer2c: "II号坦克歼击车底盘"
+trm_light_tank_destroyer_equipment_chi_panzer2c: "37mm坦克歼击车"
+trm_light_tank_aa_chassis_chi_panzer2c: "II号坦克防空车底盘"
+trm_light_tank_aa_equipment_chi_panzer2c: "20mm自行防空炮"
+
 #III号坦克A型
 trm_medium_tank_chassis_chi_panzer3a: "戴姆勒-奔驰PzKpfw.III A型"
 trm_medium_tank_chassis_chi_panzer3a_desc: "三号坦克是由德国陆军武器部，按照海因茨·古德里安在1934年初要求的规格设计的。戴姆勒-奔驰、克虏伯、曼和莱茵金属都生产了原型车，并在1936年和1937年进行了测试，最终戴姆勒-奔驰的设计被选定于1937年初投入生产。第一辆三号中型坦克于1937年5月走下生产线，但是真正的大规模生产直到1939年才开始，并成为德国陆军的标准坦克。\n三号中型坦克有着垂直倾斜的装甲，司机坐在左边，无线电报务员坐在右边。坦克顶部的炮塔坐了三个人，这比他们同时代的一些人多，使他们在战斗中更有效地连续射击。指挥官的指挥室在炮塔的顶部。引擎在后面，加上风冷散热器。\n起初三号的装甲还没那么厚，四周只携带15毫米的均质钢装甲，坦克顶部10毫米，底部5毫米，主炮也只是37毫米炮。在D型和之后的型号中，侧面装甲厚度增加到30毫米，火炮也升级成50毫米炮。\n三号坦克的生产一直持续到1943年才停止，后期只要以换装大口径炮用来支援步兵，期间共制造了5774辆三号中型坦克。"

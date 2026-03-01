@@ -440,8 +440,8 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					trm_light_tank_chi_panzer2a_turret #II号坦克炮塔(手动)
-					trm_light_tank_chi_panzer2_aa_open
-					trm_light_tank_chi_panzer2_superstructure_open
+					trm_light_tank_chi_panzer2_superstructure_open #II号坦克上部结构
+					trm_light_tank_chi_panzer2_aa_open #II号坦克开放式防空炮架
 				}
 			}
 			fixed_trm_tank_main_gun_slot = inherit

@@ -50,7 +50,7 @@ technologies = {
 	
 	################################################################################################################
 	##坦克底盘科技树#
-	##########################################################
+	################################################################################################################
 	#雷诺FT-17
 	tech_trm_chi_armour = {
 		allow = {
@@ -383,8 +383,8 @@ technologies = {
 	tech_trm_light_tank_chassis_chi_panzer2a = {
 		allow = {
 			if = {
-				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer2a_tanks }
 				limit = { original_tag = CHI }
+				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer2a_tanks }
 			}
 		}
 		is_special_project_tech = yes
@@ -430,8 +430,8 @@ technologies = {
 	tech_trm_light_tank_chassis_chi_panzer2c = {
 		allow = {
 			if = {
-				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer2a_tanks }
 				limit = { original_tag = CHI }
+				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer2a_tanks }
 			}
 		}
 		is_special_project_tech = yes
@@ -469,8 +469,8 @@ technologies = {
 	tech_trm_medium_tank_chassis_chi_panzer3a = {
 		allow = {
 			if = {
-				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer3a_tanks }
 				limit = { original_tag = CHI }
+				ROOT = { is_special_project_completed = sp:sp_land_CHI_panzer3a_tanks }
 			}
 		}
 		is_special_project_tech = yes
@@ -727,7 +727,7 @@ technologies = {
 
 	################################################################################################################
 	##坦克配件科技树##
-	##########################################################
+	################################################################################################################
 	#哈奇开斯M1914型8mm重机枪
 	tech_trm_weapon_mg_chi_02_hotchkiss = {
 		allow = { original_tag = chi }
@@ -757,36 +757,6 @@ technologies = {
 			armor_tech_gun
 		}
 	}
-	#皮托SA-18型37mm坦克炮
-	tech_trm_weapon_c_chi_37_sa18 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_c_chi_37_sa18
-		}
-		show_equipment_icon = yes
-		research_cost = 1.2
-		start_year = 1928
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL5 y = @1928 } #坦克武器图标的坐标
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_37_sa18 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	##########################################################
 	#维克斯7.7mm水冷重机枪
 	tech_trm_weapon_mg_chi_vickers = {
 		allow = { original_tag = chi }
@@ -805,6 +775,275 @@ technologies = {
 		ai_will_do = { factor = 1 }
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_vickers }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#捷格加廖夫7.62mmDT型车载机枪(同轴/后向)
+	tech_trm_weapon_mg_chi_dt = {
+		allow = { original_tag = chi } 
+		enable_equipment_modules = {
+			trm_weapon_coax_mg_chi_dt #捷格加廖夫7.62mmDT型车载机枪(同轴)
+			trm_weapon_hull_mg_chi_dt #捷格加廖夫7.62mmDT型车载机枪(后向)
+		}
+		dependencies = {
+			hmg_2 = 1 #机枪 II型
+		}
+		show_equipment_icon = yes
+		research_cost = 1.0
+		start_year = 1938
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL1 y = @1938 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_dt }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#西蒙&祖尔MG13式7.92mm机枪(双联装)
+	tech_trm_weapon_mg_chi_mg13_x2 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_mg_chi_mg13_x2
+		}
+		dependencies = {
+			hmg_2 = 1 #机枪 II型
+		}
+		path = {
+			leads_to_tech = tech_trm_weapon_coax_mg_chi_mg34 #毛瑟MG34式7.92mm车载机枪
+			research_cost_coeff = 1
+		}
+		show_equipment_icon = yes
+		research_cost = 1.0
+		start_year = 1936
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL1 y = @1936 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_mg13_x2 }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#莱茵金属KwK30型20mmL/55机关炮
+	tech_trm_weapon_c_chi_KwK20 = {
+		allow = {
+			if = {
+				limit = { original_tag = CHI }
+				ROOT = { is_special_project_completed = sp:sp_land_CHI_trm_weapon_c_chi_KwK20 }
+			}
+		}
+		is_special_project_tech = yes
+		enable_equipment_modules = {
+			trm_weapon_c_chi_KwK20 #莱茵金属KwK30型20mmL/55机关炮
+		}
+		show_equipment_icon = yes
+		research_cost = 1.5
+		start_year = 1937
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL3 y = @1937 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_KwK20 }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#苏罗通ST-5型20mm机关炮
+	tech_trm_weapon_aa_ac_chi_20_flak38 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_aa_ac_chi_20_flak38
+		}
+		show_equipment_icon = yes
+		dependencies = {
+			antiair2 = 1
+		}
+		research_cost = 1.6
+		start_year = 1938
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL3 y = @1938 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = {
+			factor = 0
+		}
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_aa_ac_chi_20_flak38 }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#毛瑟MG34式7.92mm车载机枪
+	tech_trm_weapon_coax_mg_chi_mg34 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
+			trm_weapon_coax_mg_chi_mg34_x2 #毛瑟MG34式7.92mm机枪(同轴/双联装)
+			trm_weapon_hull_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(航向)
+		}
+		show_equipment_icon = yes
+		research_cost = 1.0
+		start_year = 1937
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL1 y = @1937 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_coax_mg_chi_mg34 }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#勃朗宁M1919A4型7.62mm车载机枪
+	tech_trm_weapon_mg_chi_m1919 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_coax_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(同轴)
+			trm_weapon_hull_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(航向)
+			trm_special_aamg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(高射)
+		}
+		dependencies = {
+			hmg_3 = 1 #机枪 III型
+		}
+		path = {
+			leads_to_tech = tech_trm_weapon_mg_chi_m2 #勃朗宁M2式12.7mm重机枪
+			research_cost_coeff = 1
+		}
+		show_equipment_icon = yes
+		research_cost = 1.0
+		start_year = 1943
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL1 y = @1943 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_m1919 }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#勃朗宁M2式12.7mm车载机枪
+	tech_trm_weapon_mg_chi_m2 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_mg_chi_m2 #勃朗宁M2式12.7mm重机枪
+		}
+		dependencies = {
+			hmg_4 = 1 #机枪 IV型
+		}
+		show_equipment_icon = yes
+		research_cost = 1.0
+		start_year = 1944
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL1 y = @1944 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_m2 }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+
+	#皮托SA-18型37mm坦克炮
+	tech_trm_weapon_c_chi_37_sa18 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_c_chi_37_sa18
+		}
+		show_equipment_icon = yes
+		research_cost = 1.2
+		start_year = 1928
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL5 y = @1928 } #坦克武器图标的坐标
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_37_sa18 }
 			is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
@@ -845,30 +1084,69 @@ technologies = {
 			armor_tech_component
 			armor_tech_gun
 		}
-	}	
-	##########################################################
-	#捷格加廖夫7.62mmDT型车载机枪(同轴/后向)
-	tech_trm_weapon_mg_chi_dt = {
-		allow = { original_tag = chi } 
+	}
+	#克虏伯FK18型75mmL/26野战炮
+	tech_trm_weapon_art_chi_75_fk18 = {
+		allow = { original_tag = chi }
 		enable_equipment_modules = {
-			trm_weapon_coax_mg_chi_dt #捷格加廖夫7.62mmDT型车载机枪(同轴)
-			trm_weapon_hull_mg_chi_dt #捷格加廖夫7.62mmDT型车载机枪(后向)
-		}
-		dependencies = {
-			hmg_2 = 1 #机枪 II型
+			trm_weapon_art_chi_75_fk18
 		}
 		show_equipment_icon = yes
-		research_cost = 1.0
-		start_year = 1938
+		dependencies = {
+			mntartillery1 = 1
+		}
+		research_cost = 0.8
+		start_year = 1939
 		folder = {
 			name = trm_armour_chi_folder
-			position = { x = @GUN_COL1 y = @1938 }
+			position = { x = @GUN_COL3 y = @1939 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = {
+			factor = 0
+		}
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_art_chi_75_fk18 }
+			on_tank_tech_research_complete = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#莱茵金属KwK36型37mmL/45坦克炮
+	tech_trm_weapon_c_chi_KwK37 = {
+		allow = {
+			if = {
+				limit = { original_tag = CHI }
+				ROOT = { is_special_project_completed = sp:sp_land_CHI_trm_weapon_c_chi_KwK37 }
+			}
+		}
+		is_special_project_tech = yes
+		enable_equipment_modules = {
+			trm_weapon_c_chi_KwK37 #莱茵金属KwK36型37mmL/45坦克炮
+		}
+		path = {
+			leads_to_tech = tech_trm_weapon_c_chi_45_20k34
+			research_cost_coeff = 1
+		}
+		show_equipment_icon = yes
+		research_cost = 1.5
+		start_year = 1937
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL5 y = @1937 }
 		}
 		special_project_specialization = { specialization_land }
 		ai_will_do = { factor = 1 }
 		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_dt }
-			on_tank_tech_research_complete = yes
+			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_KwK37 }
+			is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -885,9 +1163,6 @@ technologies = {
 		allow = { original_tag = chi }
 		enable_equipment_modules = {
 			trm_weapon_c_chi_45_20k34
-		}
-		dependencies = {
-			antitank1 = 1 #反坦克炮升级
 		}
 		path = {
 			leads_to_tech = tech_trm_weapon_c_chi_45_20k38
@@ -945,6 +1220,149 @@ technologies = {
 			armor_tech_gun
 		}
 	}
+	#M5型37mmL/53坦克炮
+	tech_trm_weapon_c_chi_37_m5 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_c_chi_37_m5 #M5型37mmL/53坦克炮
+		}
+		dependencies = {
+			improved_antitank = 1 #47mm M41轻型反坦克炮
+		}
+		path = {
+			leads_to_tech = tech_trm_weapon_c_chi_75_m3 #M3型75mmL/40坦克炮
+			research_cost_coeff = 1
+		}
+		show_equipment_icon = yes
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL5 y = @1943 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_37_m5 }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+	#M3型75mmL/40坦克炮
+	tech_trm_weapon_c_chi_75_m3 = {
+		allow = { original_tag = chi }
+		enable_equipment_modules = {
+			trm_weapon_c_chi_75_m3
+		}
+		dependencies = {
+			antitank5 = 1 #75mm m.43反坦克炮
+		}
+		show_equipment_icon = yes
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @GUN_COL5 y = @1944 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_75_m3 }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_gun_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_gun
+		}
+	}
+
+	#莱茵金属KwK30型20mmL/55机关炮弹药
+	tech_trm_ammo_c_chi_kwk20 = {
+		allow = { original_tag = chi }
+		xp_research_type = army
+		xp_boost_cost = 50 #研究加成花费XP
+		xp_research_bonus = 0.30 #研究加成
+		enable_equipment_modules = { #对应文件common\units\equipment\modules\01_tank_modules
+			trm_ammo_c_chi_kwk20_HE #Sprgr.39型20mm高爆弹(HE)
+			trm_ammo_c_chi_kwk20_AP #PzGr.40型20mm硬芯穿甲弹(APCR)
+		}
+		show_equipment_icon = yes
+		dependencies = {
+			improved_machine_tools = 1 #改良机床
+			smelting_techniques = 1 #改进冶炼技术
+		}
+		research_cost = 2.5
+		start_year = 1937
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @AMMO_COL1 y = @1937 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_ammo_c_chi_kwk37 }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_ammo_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_ammo
+		}
+	}
+	#莱茵金属KwK36型37mmL/45坦克炮弹药
+	tech_trm_ammo_c_chi_kwk37 = {
+		allow = { original_tag = chi }
+		xp_research_type = army
+		xp_boost_cost = 100 #研究加成花费XP
+		xp_research_bonus = 0.50 #研究加成
+		enable_equipment_modules = { #对应文件common\units\equipment\modules\01_tank_modules
+			trm_ammo_c_chi_kwk37_APHE #PzGr.型37mm穿甲榴弹(APHE)
+			trm_ammo_c_chi_kwk37_APCR #PzGr.40型37mm硬芯穿甲弹(APCR)
+		}
+		show_equipment_icon = yes
+		dependencies = {
+			improved_machine_tools = 1 #改良机床
+			smelting_techniques = 1 #改进冶炼技术
+		}
+		research_cost = 2.5
+		start_year = 1937
+		folder = {
+			name = trm_armour_chi_folder
+			position = { x = @AMMO_COL3 y = @1937 }
+		}
+		special_project_specialization = { specialization_land }
+		ai_will_do = { factor = 1 }
+		on_research_complete = {
+			set_temp_variable = { tech = token:tech_trm_ammo_c_chi_kwk37 }
+			is_tech_ai_valid = yes
+			custom_effect_tooltip = tech_category_tt
+			custom_effect_tooltip = armor_tech_tt
+			custom_effect_tooltip = armor_tech_component_tt
+			custom_effect_tooltip = armor_tech_ammo_tt
+		}
+		categories = {
+			armor_tech
+			armor_tech_component
+			armor_tech_ammo
+		}
+	}
 	#45mm20-K坦克炮弹药
 	tech_trm_ammo_chi_apcr_small = {
 		allow = { original_tag = chi }
@@ -980,353 +1398,6 @@ technologies = {
 			armor_tech
 			armor_tech_component
 			armor_tech_ammo
-		}
-	}
-	##########################################################
-	#西蒙&祖尔MG13式7.92mm机枪(双联装)
-	tech_trm_weapon_mg_chi_mg13_x2 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_mg_chi_mg13_x2
-		}
-		dependencies = {
-			hmg_2 = 1 #机枪 II型
-		}
-		path = {
-			leads_to_tech = tech_trm_weapon_coax_mg_chi_mg34 #毛瑟MG34式7.92mm车载机枪
-			research_cost_coeff = 1
-		}
-		show_equipment_icon = yes
-		research_cost = 1.0
-		start_year = 1936
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL1 y = @1936 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_mg13_x2 }
-			on_tank_tech_research_complete = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	##########################################################
-	#莱茵金属KwK30型20mmL/55机关炮
-	tech_trm_weapon_c_chi_KwK20 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_c_chi_KwK20 #莱茵金属KwK30型20mmL/55机关炮
-		}
-		show_equipment_icon = yes
-		dependencies = {
-			antiair1 = 1 #防空炮升级
-		}
-		research_cost = 1.5
-		start_year = 1937
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL3 y = @1937 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_KwK20 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	#莱茵金属KwK30型20mmL/55机关炮弹药
-	tech_trm_ammo_c_chi_kwk20 = {
-		allow = { original_tag = chi }
-		xp_research_type = army
-		xp_boost_cost = 50 #研究加成花费XP
-		xp_research_bonus = 0.30 #研究加成
-		enable_equipment_modules = { #对应文件common\units\equipment\modules\01_tank_modules
-			trm_ammo_c_chi_kwk20_HE #Sprgr.39型20mm高爆弹(HE)
-			trm_ammo_c_chi_kwk20_AP #PzGr.40型20mm硬芯穿甲弹(APCR)
-		}
-		show_equipment_icon = yes
-		dependencies = {
-			smelting_techniques = 1 #改进冶炼技术
-		}
-		research_cost = 2.5
-		start_year = 1937
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @AMMO_COL1 y = @1937 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_ammo_c_chi_kwk37 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_ammo_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_ammo
-		}
-	}
-	##########################################################
-	#莱茵金属KwK36型37mmL/45坦克炮
-	tech_trm_weapon_c_chi_KwK37 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_c_chi_KwK37 #莱茵金属KwK36型37mmL/45坦克炮
-		}
-		path = {
-			leads_to_tech = tech_trm_weapon_c_chi_45_20k34
-			research_cost_coeff = 1
-		}
-		show_equipment_icon = yes
-		research_cost = 1.5
-		start_year = 1937
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL5 y = @1937 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_KwK37 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	#毛瑟MG34式7.92mm车载机枪
-	tech_trm_weapon_coax_mg_chi_mg34 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
-			trm_weapon_coax_mg_chi_mg34_x2 #毛瑟MG34式7.92mm机枪(同轴/双联装)
-			trm_weapon_hull_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(航向)
-		}
-		show_equipment_icon = yes
-		research_cost = 1.0
-		start_year = 1937
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL1 y = @1937 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_coax_mg_chi_mg34 }
-			on_tank_tech_research_complete = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	#莱茵金属KwK36型37mmL/45坦克炮弹药
-	tech_trm_ammo_c_chi_kwk37 = {
-		allow = { original_tag = chi }
-		xp_research_type = army
-		xp_boost_cost = 100 #研究加成花费XP
-		xp_research_bonus = 0.50 #研究加成
-		enable_equipment_modules = { #对应文件common\units\equipment\modules\01_tank_modules
-			trm_ammo_c_chi_kwk37_APHE #PzGr.型37mm穿甲榴弹(APHE)
-			trm_ammo_c_chi_kwk37_APCR #PzGr.40型37mm硬芯穿甲弹(APCR)
-		}
-		show_equipment_icon = yes
-		dependencies = {
-			smelting_techniques = 1 #改进冶炼技术
-		}
-		research_cost = 2.5
-		start_year = 1937
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @AMMO_COL3 y = @1937 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_ammo_c_chi_kwk37 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_ammo_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_ammo
-		}
-	}
-	##########################################################
-	#M5型37mmL/53坦克炮
-	tech_trm_weapon_c_chi_37_m5 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_c_chi_37_m5 #M5型37mmL/53坦克炮
-		}
-		dependencies = {
-			antitank3 = 1 #改良反坦克炮升级 I
-		}
-		path = {
-			leads_to_tech = tech_trm_weapon_c_chi_75_m3 #M3型75mmL/40坦克炮
-			research_cost_coeff = 1
-		}
-		show_equipment_icon = yes
-		research_cost = 1.5
-		start_year = 1943
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL5 y = @1943 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_37_m5 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	#勃朗宁M1919A4型7.62mm车载机枪
-	tech_trm_weapon_mg_chi_m1919 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_coax_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(同轴)
-			trm_weapon_hull_mg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(航向)
-			trm_special_aamg_chi_m1919 #勃朗宁M1919A4型7.62mm车载机枪(高射)
-		}
-		dependencies = {
-			hmg_3 = 1 #机枪 III型
-		}
-		path = {
-			leads_to_tech = tech_trm_weapon_mg_chi_m2 #勃朗宁M2式12.7mm重机枪
-			research_cost_coeff = 1
-		}
-		show_equipment_icon = yes
-		research_cost = 1.0
-		start_year = 1943
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL1 y = @1943 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_m1919 }
-			on_tank_tech_research_complete = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	##########################################################
-	#M3型75mmL/40坦克炮
-	tech_trm_weapon_c_chi_75_m3 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_c_chi_75_m3
-		}
-		dependencies = {
-			antitank4 = 1 #改良反坦克炮升级 II
-		}
-		show_equipment_icon = yes
-		research_cost = 1.5
-		start_year = 1944
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL5 y = @1944 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_c_chi_75_m3 }
-			is_tech_ai_valid = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
-		}
-	}
-	#勃朗宁M2式12.7mm车载机枪
-	tech_trm_weapon_mg_chi_m2 = {
-		allow = { original_tag = chi }
-		enable_equipment_modules = {
-			trm_weapon_mg_chi_m2 #勃朗宁M2式12.7mm重机枪
-		}
-		dependencies = {
-			hmg_4 = 1 #机枪 IV型
-		}
-		show_equipment_icon = yes
-		research_cost = 1.0
-		start_year = 1944
-		folder = {
-			name = trm_armour_chi_folder
-			position = { x = @GUN_COL1 y = @1944 }
-		}
-		special_project_specialization = { specialization_land }
-		ai_will_do = { factor = 1 }
-		on_research_complete = {
-			set_temp_variable = { tech = token:tech_trm_weapon_mg_chi_m2 }
-			on_tank_tech_research_complete = yes
-			custom_effect_tooltip = tech_category_tt
-			custom_effect_tooltip = armor_tech_tt
-			custom_effect_tooltip = armor_tech_component_tt
-			custom_effect_tooltip = armor_tech_gun_tt
-		}
-		categories = {
-			armor_tech
-			armor_tech_component
-			armor_tech_gun
 		}
 	}
 	#M3型75mmL/40坦克炮弹药

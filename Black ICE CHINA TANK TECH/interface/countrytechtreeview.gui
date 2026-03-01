@@ -21429,6 +21429,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			#苏罗通ST-5型20mm机关炮
+			gridboxtype = {
+				name = "tech_trm_weapon_aa_ac_chi_20_flak38_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 			#莱茵金属KwK30型20mmL/55机关炮弹药
 			gridboxtype = {
 				name = "tech_trm_ammo_c_chi_kwk20_tree"
@@ -21439,6 +21446,13 @@ guiTypes = {
 			#莱茵金属KwK36型37mmL/45坦克炮
 			gridboxtype = {
 				name = "tech_trm_weapon_c_chi_KwK37_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			#克虏伯FK18型75mmL/26野战炮
+			gridboxtype = {
+				name = "tech_trm_weapon_art_chi_75_fk18_tree"
 				position = { x = 190 y = 172 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

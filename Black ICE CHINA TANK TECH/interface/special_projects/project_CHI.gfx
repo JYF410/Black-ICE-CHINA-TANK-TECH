@@ -1,0 +1,33 @@
+###CABINET ASSETS##
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_sp_land_CHI_panzer2a_tanks"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_CHI_panzer2_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_land_CHI_panzer2c_tanks"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_CHI_panzer2_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_land_CHI_panzer3a_tanks"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_CHI_panzer3a_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_land_CHI_trm_weapon_c_chi_KwK20"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_CHI_trm_weapon_c_chi_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_land_CHI_trm_weapon_c_chi_KwK37"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_CHI_trm_weapon_c_chi_gun.dds"
+	}
+
+}
+
+
+
+
+
+
+
