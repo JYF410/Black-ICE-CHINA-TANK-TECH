@@ -1,6 +1,5 @@
 #中国国民革命军坦克研发科技树
 technologies = {
-	##科技树垂直和水平坐标 = {
 	#垂直坐标
 	@1928 = 0
 	@1935 = 2
@@ -46,7 +45,6 @@ technologies = {
 	@CHASSIS_LIGHT13 = 28
 	@CHASSIS_LIGHT14 = 29
 	@CHASSIS_LIGHT15 = 30
-	#}
 	
 	################################################################################################################
 	##坦克底盘科技树#
@@ -57,7 +55,14 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_completed_focus = KMT_closer_tie_with_fra #完成前置国策：联系法国
+					ZXL = {
+						NOT = { has_war_with = CHI }
+						is_puppet_of = CHI
+						has_opinion = {
+							target = CHI
+							value > 70
+						}
+					}
 					has_tech = early_tractors #早期拖拉机
 				}
 			}
@@ -112,13 +117,13 @@ technologies = {
 	tech_trm_tankette_tank_chassis_chi_cv33 = {
 		allow = {
 			always = no
-			#if = {
-			#	limit = { original_tag = CHI }
-			#	OR = {
-			#		has_completed_focus = KMT_ITA_friend #完成前置国策：天津警察训练
-			#		has_tech = basic_machine_tools	#基础机床
-			#	}
-			#}
+			if = {
+				limit = { original_tag = CHI }
+				OR = {
+					has_completed_focus = KMT_ITA_friend #完成前置国策：天津警察训练
+					has_tech = early_tractors #早期拖拉机
+				}
+			}
 		}
 		enable_equipments = {
 			trm_tankette_tank_chassis_chi_cv33 #引用文件trm_tank_chassis_tankette_CHI
@@ -157,13 +162,6 @@ technologies = {
 	tech_trm_tankette_tank_chassis_chi_cv35 = {
 		allow = {
 			always = no
-			#if = {
-			#	limit = { original_tag = CHI }
-			#	OR = {
-			#		has_completed_focus = KMT_ITA_friend #完成前置国策：天津警察训练
-			#		has_tech = armor_industry #坦克工厂
-			#	}
-			#}
 		}
 		enable_equipments = {
 			trm_tankette_tank_chassis_chi_cv35 #引用文件trm_tank_chassis_tankette_CHI
@@ -199,14 +197,13 @@ technologies = {
 	tech_trm_tankette_tank_chassis_chi_ue = {
 		allow = {
 			always = no
-			#if = {
-			#	limit = { original_tag = CHI }
-			#	OR = {
-			#		has_completed_focus = KMT_purchase_french_equipments #完成前置国策：购买法国装备
-			#		has_tech = dispersed_industry #离散型工业I级
-			#		has_tech = concentrated_industry #密集型工业I级
-			#	}
-			#}
+			if = {
+				limit = { original_tag = CHI }
+				OR = {
+					has_completed_focus = KMT_reach_out_to_france #完成前置国策：对法示好
+					has_tech = early_tractors #早期拖拉机
+				}
+			}
 		}
 		enable_equipments = {
 			trm_tankette_tank_chassis_chi_ue #引用文件trm_tank_chassis_tankette_CHI
@@ -245,13 +242,6 @@ technologies = {
 	tech_trm_light_tank_chassis_chi_zb_1 = {
 		allow = {
 			always = no
-			#if = {
-			#	limit = { original_tag = CHI }
-			#	OR = {
-			#		has_completed_focus = KMT_static_defense #完成前置国策：专注静态防御
-			#		has_tech = armor_industry #坦克工厂I级
-			#	}
-			#}
 		}
 		enable_equipments = {
 			trm_light_tank_chassis_chi_zb_1 #引用文件\common\units\equipment\trm_tank_chassis_light
@@ -288,10 +278,8 @@ technologies = {
 		allow = {
 			if = {
 				limit = { original_tag = CHI }
-				OR = {
-					has_completed_focus = KMT_closer_tie_with_eng #完成前置国策：英国援助
-					has_tech = improved_machine_tools	#改良机床
-				}
+				has_completed_focus = KMT_invite_foreign_investors #需要完成国策:邀请外国投资者
+				has_tech = early_tractors #早期拖拉机
 			}
 		}
 		enable_equipments = {
@@ -341,8 +329,8 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_completed_focus = KMT_increase_sino_german_cooperation #完成前置国策：加强中德合作
-					has_tech = armor_industry #坦克工厂I级
+					has_completed_focus = KMT_mission_to_germany #完成前置国策：加强中德合作
+					has_tech = improved_machine_tools #改良机床
 				}
 			}
 		}
@@ -513,9 +501,8 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_completed_focus = KMT_closer_tie_with_eng #完成前置国策：英国援助
-					has_tech = dispersed_industry #离散型工业I级
-					has_tech = concentrated_industry #密集型工业I级
+					has_completed_focus = KMT_british_cooperation #完成前置国策：英国援助
+					has_tech = improved_machine_tools #改良机床
 				}
 			}
 		}
@@ -558,8 +545,8 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_completed_focus = KMT_soviet_tanks #完成前置国策：购买苏联坦克
-					has_tech = armor_industry #坦克工厂I级
+					has_completed_focus = KMT_mission_to_the_soviet_union #派遣使团赴苏
+					has_tech = armor_industry #坦克工坊
 				}
 			}
 		}
@@ -603,8 +590,8 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_completed_focus = KMT_joint_tank_dev #完成前置国策：联合开发坦克
-					has_tech = armor_industry2 #坦克工厂II级
+					has_completed_focus = KMT_purchase_tanks #订购坦克
+					has_tech = armor_industry #坦克工坊
 				}
 			}
 		}
@@ -645,8 +632,8 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_completed_focus = KMT_closer_tie_with_usa #完成前置国策：亲近美国
-					has_tech = armor_industry2 #坦克工厂II级
+					has_completed_focus = KMT_mission_to_the_us #派遣使团赴美
+					has_tech = armor_industry #坦克工坊
 				}
 			}
 		}
@@ -688,10 +675,7 @@ technologies = {
 		allow = {
 			if = {
 				limit = { original_tag = CHI }
-				OR = {
-					has_completed_focus = KMT_saco #完成前置国策：中美合作所
-					has_tech = armor_industry3 #坦克工厂III级
-				}
+				has_tech = armor_industry2 #坦克工厂II级
 			}
 		}
 		enable_equipments = {

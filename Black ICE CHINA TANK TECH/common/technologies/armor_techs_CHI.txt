@@ -55,8 +55,7 @@ technologies = {
 			if = {
 				limit = { original_tag = CHI }
 				OR = {
-					has_tech = tool_maintenance #维修工具
-					has_completed_focus = KMT_german_tanks #完成前置国策：订购德国坦克
+					has_tech = basic_machine_tools #基础机床
 				}
 			}
 		}
@@ -176,7 +175,7 @@ technologies = {
 		allow = {
 			OR = {
 				has_tech = smelting_techniques #改进冶炼技术
-				has_completed_focus = KMT_soviet_tanks #购买苏联坦克
+				has_completed_focus = KMT_purchase_tanks #订购坦克
 			}
 		}
 		enable_equipment_modules = {
@@ -474,8 +473,7 @@ technologies = {
 	#引进国外发动机生产线
 	tech_trm_engine_gasoline_basic_chi = {
 		allow = {
-			has_completed_focus = KMT_invite_foreign_investors #需要完成国策:吸引外国投资
-			has_tech = basic_machine_tools #基础机床
+			has_completed_focus = KMT_invite_foreign_investors #需要完成国策:邀请外国投资者
 		}
 		#研发后可解锁国民党独有发动机模块：
 		enable_equipment_modules = {
@@ -520,8 +518,8 @@ technologies = {
 	}
 	#本地化组装汽油发动机
 	tech_trm_engine_gasoline_interwar_chi = {
-		allow = { 
-			has_tech = vehicle_industry #发动机工坊
+		allow = {
+			has_tech = basic_machine_tools #基础机床
 		} 
 		enable_equipment_modules = {
 			trm_engine_jaguar_G_0080 #阿姆斯特朗-西德利“美洲豹”四缸风冷汽油发动机(80hp)
@@ -564,8 +562,8 @@ technologies = {
 	}
 	#改良汽油发动机
 	tech_trm_engine_gasoline_improved_chi = {
-		allow = { 
-			has_tech = vehicle_industry2 #发动机工厂
+		allow = {
+			has_tech = vehicle_industry #发动机工坊
 		}
 		enable_equipment_modules = {
 			trm_engine_GAZT_G_0090 #GAZT-26型四缸风冷汽油发动机(90hp)
@@ -611,8 +609,8 @@ technologies = {
 	}
 	#引进美国星型发动机
 	tech_trm_engine_radial_interwar_chi = {
-		allow = { 
-			has_tech = vehicle_industry3 #大型发动机工厂
+		allow = {
+			has_tech = vehicle_industry2 #发动机工厂
 		}
 		enable_equipment_modules = {
 			trm_engine_continental_RG_0250 #大陆W-670-9A七缸星型风冷汽油发动机（250hp）
@@ -656,7 +654,7 @@ technologies = {
 	#引进美国先进发动机
 	tech_trm_engine_radial_improved_chi = {
 		allow = { 
-			has_tech = modern_machine_tools #现代机床
+			has_tech = vehicle_industry3 #大型发动机工厂
 		}
 		enable_equipment_modules = {
 			trm_engine_chrysler_RG_0425 #克莱斯勒A57型30L四冲程汽油发动机(425hp)
