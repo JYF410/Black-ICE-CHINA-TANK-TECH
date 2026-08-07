@@ -34,7 +34,7 @@ spriteTypes = { #引用文件common\units\equipment\modules\01_tank_modules
 	#卡登·洛伊德Mk.VI固定战斗室
 	spriteType = {
 		name = "GFX_SMI_trm_tankette_tank_chi_cardenloyd_casemate"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/trm/turret_construction/trm_turret_shielded.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
 	}
 	#维克斯7.7mm水冷重机枪
 	spriteType = {

@@ -1,0 +1,187 @@
+#中国国民革命军坦克配件参数
+equipment_modules = {
+
+	######################################################################################################
+	##雷诺FT-17##
+	#FT-17机枪塔(手动)
+	trm_light_tank_chi_ft17_turret_1 = { 
+		category = trm_light_tank_chi_ft17_turret #对应文件trm_tank_chassis_light_CHI
+		gui_category = trm_light_tank_fra_ft17_turret #坦克设计器-模块槽位图标(炮塔)
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_mg_chi_01_zb26 #布尔诺兵工厂ZB-26式7.92mm轻机枪
+				trm_weapon_mg_chi_02_hotchkiss #8mm哈奇开斯M1914重机枪
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+			}
+		}
+		manpower = 1
+		add_stats = {
+			build_cost_ic = 1.46
+			reliability = 0.025
+			breakthrough = 0.8
+			defense = 0.2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.035
+			maximum_speed = -0.05
+			soft_attack = 0.1
+			hard_attack = 0.05
+			breakthrough = 0.05
+			defense = 0.1
+		}
+	}
+	#FT-17炮塔(手动)
+	trm_light_tank_chi_ft17_turret_2 = { #trm_tank_chassis_light_CHI.txt
+	    category = trm_light_tank_chi_ft17_turret_gun #trm_tank_chassis_light_CHI.txt 雷诺FT-17 allowed_module_categories
+		gui_category = trm_light_tank_fra_ft17_turret #坦克设计器-模块槽位图标(炮塔)
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_c_chi_37_sa18 #皮托SA-18型37mm坦克炮
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+			}
+		}
+		manpower = 1
+		add_stats = {
+			build_cost_ic = 1.65
+			reliability = 0.02
+			breakthrough = 1.5
+			defense = 0.2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.025
+			maximum_speed = -0.05
+			soft_attack = 0.05
+			hard_attack = 0.1
+			breakthrough = 0.1
+			defense = 0.05
+			additional_collateral_damage = 0.09
+			fuel_consumption = 0.005
+		}
+	}
+	#布尔诺兵工厂ZB-26式7.92mm轻机枪
+	trm_weapon_mg_chi_01_zb26 = {
+		category = trm_weapon_mg_chi_01_zb26 #FT-17机枪塔(手动) fixed_trm_tank_main_gun_slot
+		gui_category = trm_weapon_mg #坦克设计器-模块槽位图标(主炮)
+		sfx = sfx_ui_sd_module_turret #音效
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.3706
+			reliability = -0.006
+			maximum_speed = -0.0262
+			soft_attack = 2.5477
+			hard_attack = 0.5668
+			defense = 0.6842
+			breakthrough = 0.5773	
+		}
+		add_average_stats = {
+			ap_attack = 3.0147
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0019
+			reliability = -0.0062
+			maximum_speed = -0.0144
+			fuel_consumption = 0.0065	
+		}
+		build_cost_resources = {
+		}
+	}
+	#哈奇开斯M1914型8mm重机枪
+	trm_weapon_mg_chi_02_hotchkiss = {
+		category = trm_weapon_mg_chi_02_hotchkiss #FT-17机枪塔(手动) fixed_trm_tank_main_gun_slot
+		gui_category = trm_weapon_mg #坦克设计器-模块槽位图标(主炮)
+		sfx = sfx_ui_sd_module_turret #音效
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.4334
+			reliability = -0.0067
+			maximum_speed = -0.0484
+			soft_attack = 2.6751
+			hard_attack = 0.5863
+			defense = 0.7698
+			breakthrough = 0.5986
+		}
+		add_average_stats = {
+			ap_attack = 3.2147
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0022
+			reliability = -0.0067
+			maximum_speed = -0.0157
+			fuel_consumption = 0.0072
+		}
+		build_cost_resources = {
+		}
+	}
+	#皮托SA-18型37mm坦克炮
+	trm_weapon_c_chi_37_sa18 = {
+		category = trm_weapon_c_chi_37_sa18 #FT-17炮塔(手动) fixed_trm_tank_main_gun_slot
+		gui_category = trm_weapon_c #坦克设计器-模块槽位图标(主炮)
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.2538
+			reliability = -0.015
+			maximum_speed = -0.2937
+			soft_attack = 3.0516
+			hard_attack = 1.748
+			defense = 1.0174
+			breakthrough = 0.9293
+		}
+		add_average_stats = {
+			ap_attack = 8.1031
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0063
+			reliability = -0.015
+			maximum_speed = -0.0351
+			fuel_consumption = 0.0209	
+		}
+		build_cost_resources = {
+			artillery_production = 1	
+		}	
+	}
+	#雷诺4.5L四缸风冷汽油发动机(35hp)
+	trm_engine_renault_G_0035 = { #对应文件common\technologies\armor_techs_CHI
+		category = trm_engine_renault_G_0035 #对应common\units\equipment\trm_tank_chassis_light_CHI
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.442
+			reliability = -0.025
+			maximum_speed = 8.650
+			defense = 0.095
+			breakthrough = 0.248
+			fuel_capacity = 41.952
+			fuel_consumption = 0.508
+		}
+		multiply_stats = {
+			build_cost_ic = 0.002
+			reliability = -0.022
+			maximum_speed = 0.058
+			soft_attack = 0.109
+			additional_collateral_damage = 0.095
+			hard_attack = 0.109
+			defense = 0.036
+			breakthrough = 0.198
+		}
+		build_cost_resources = {
+			steel = 1
+			engine_production = 1
+		}
+	}
+	################################################################################################################
+	##雷诺UE##
+
+	################################################################################################################
+	##雷诺ZB##
+
+}

@@ -9,7 +9,7 @@ dependencies={
 	"黑冰测试版 内核汉化"
 	"黑冰：东亚重置"
 }
-name="Black ICE CHINA TANK TECH 黑冰中国国民革命军坦克科技"
+name="Black ICE CHINA TANK TECH"
 picture="thumbnail.png"
-supported_version="1.19.*"
+supported_version="1.19.2.0"
 remote_file_id="3463196432"

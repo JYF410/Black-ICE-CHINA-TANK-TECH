@@ -73,7 +73,6 @@ equipments = {
 		}
 		manpower = 1
 	}
-	################################################################################################################
 	##雷诺ZB底盘
 	trm_light_tank_chassis_chi_zb_1 = {
 		derived_variant_name = trm_light_tank_equipment_chi_zb_1 #引用文件trm_armour_chi
@@ -105,6 +104,7 @@ equipments = {
 			fixed_trm_tank_engine_slot = {
 				required = yes
 				allowed_module_categories = {
+					trm_engine_ford_G_00225 #福特T型四缸汽油发动机(22.5hp)
 					trm_engine_jaguar_G_0080 #阿姆斯特朗-西德利“美洲豹”四缸风冷汽油发动机(80hp)
 					trm_engine_AEC_G_0095 #AEC四缸水冷汽油发动机(95hp)
 					trm_engine_Phantom_G_0125 #劳斯莱斯幻影II六缸水冷汽油发动机(125hp)

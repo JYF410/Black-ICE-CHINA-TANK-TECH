@@ -1,0 +1,359 @@
+#中国国民革命军坦克配件参数
+equipment_modules = {
+
+	################################################################################################################
+	##卡登·洛伊德Mk.VI##
+	#卡登·洛伊德Mk.VI固定战斗室
+	trm_tankette_tank_chi_cardenloyd_casemate = { 
+		category = trm_tankette_tank_chi_cardenloyd_casemate
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = amphibious #该模块禁止安装于：两栖坦克
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_mg_chi #维克斯7.7mm水冷重机枪
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+			}
+		}
+		manpower = 1
+		add_stats = {
+			build_cost_ic = 0.85
+			reliability = 0.05
+			breakthrough = 0.5
+			defense = 0.2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.15
+			maximum_speed = -0.01
+			soft_attack = 0.05
+			hard_attack = -0.1
+			defense = 0.04
+			breakthrough = 0.02
+		}
+	}
+	#维克斯-卡登·洛伊德(VCL)型机枪塔
+	trm_tankette_tank_chi_vcl_turret = {
+		category = trm_tankette_tank_chi_vcl_turret
+		gui_category = trm_tankette_tank_chi_vcl_turret #坦克设计器-模块槽位图标(炮塔)
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_mg_chi #维克斯7.7mm水冷重机枪
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+			}
+		}
+		manpower = 1
+		add_stats = {
+			build_cost_ic = 0.75
+			reliability = 0.05
+			breakthrough = 1.1
+			defense = 0.3
+		}
+		multiply_stats = {
+			build_cost_ic = -0.03
+			maximum_speed = 0.05
+			soft_attack = 0.15
+			hard_attack = 0.03
+			breakthrough = 0.05
+			defense = 0.15
+		}
+	}
+	#维克斯7.7mm水冷重机枪
+	trm_weapon_mg_chi_vickers = { 
+		category = trm_weapon_mg_chi
+		gui_category = trm_weapon_mg
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.5
+			reliability = -0.01
+			maximum_speed = -0.06
+			soft_attack = 2.1
+			hard_attack = 0.56
+			defense = 0.65
+			breakthrough = 0.55
+		}
+		add_average_stats = {
+			ap_attack = 2
+		}
+		multiply_stats = {
+			build_cost_ic = 0.002
+			reliability = -0.007
+			maximum_speed = -0.017
+			fuel_consumption = 0.008
+		}
+		build_cost_resources = {
+		}
+	}
+	#福特T型四缸汽油发动机(22.5hp)
+	trm_engine_ford_G_00225 = {
+		category = trm_engine_ford_G_00225
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.107
+			reliability = -0.017
+			maximum_speed = 8.128
+			defense = 0.0827
+			breakthrough = 0.191
+			fuel_capacity = 37.428
+			fuel_consumption = 0.325
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0015
+			reliability = -0.016
+			maximum_speed = 0.047
+			soft_attack = 0.091
+			additional_collateral_damage = 0.085
+			hard_attack = 0.052
+			defense = 0.029
+			breakthrough = 0.173
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	#梅德斯ESTB六缸水冷汽油发动机(88hp)
+	trm_engine_ESTB_G_0088 = {
+		category = trm_engine_ESTB_G_0088
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.916
+			reliability = -0.038
+			maximum_speed = 10.22
+			defense = 0.17
+			breakthrough = 0.43
+			fuel_capacity = 48.55
+			fuel_consumption = 0.69
+		}
+		multiply_stats = {
+			build_cost_ic = 0.005
+			reliability = -0.033
+			maximum_speed = 0.089
+			soft_attack = 0.145
+			additional_collateral_damage = 0.145
+			hard_attack = 0.145
+			defense = 0.048
+			breakthrough = 0.243
+		}
+		build_cost_resources = {
+			steel = 1
+			engine_production = 1
+		}
+	}
+	#两栖浮渡设备
+	trm_special_schwimmpanzer_chi = {
+		category = trm_special_schwimmpanzer_chi
+		gui_category = trm_special_external
+		sfx = sfx_ui_sd_module_sonar
+		allow_equipment_type = amphibious #两栖坦克
+		forbid_equipment_type_exact_match = armor
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 0.35
+			reliability = -0.02
+		}
+		multiply_stats = {
+			build_cost_ic = 0.12
+			reliability = -0.02
+			maximum_speed = -0.05
+			soft_attack = -0.02
+			additional_collateral_damage = -0.02
+			hard_attack = -0.02
+			defense = -0.02
+			breakthrough = -0.02
+			fuel_consumption = 0.01
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	################################################################################################################
+	##维克斯Mk.E型##
+	#维克斯Mk.E型炮塔(手动)
+	trm_light_tank_chi_vickers_e_turret = {
+		category = trm_light_tank_chi_vickers_e_turret
+		gui_category = trm_light_tank_chi_vickers_e_turret #坦克设计器-模块槽位图标(炮塔)
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_c_chi_47 #维克斯QF3型47mm/32倍径坦克炮
+			}
+			fixed_trm_tank_coax_gun_slot = {
+				trm_weapon_mg_chi #维克斯7.7mm水冷重机枪
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+			}
+		}
+		manpower = 2
+		add_stats = {
+			build_cost_ic = 1.6472
+			reliability = 0.02
+			breakthrough = 2.1
+			defense = 0.25
+		}
+		multiply_stats = {
+			build_cost_ic = -0.021
+			maximum_speed = -0.08
+			soft_attack = 0.12
+			hard_attack = 0.15
+			breakthrough = 0.057
+			defense = 0.1
+			additional_collateral_damage = 0.12
+			fuel_consumption = 0.01
+		}
+	}
+	#维克斯QF3型47mm/32倍径坦克炮
+	trm_weapon_c_chi_qf3_47 = {
+		category = trm_weapon_c_chi_47
+		gui_category = trm_weapon_c
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2.0081
+			reliability = -0.0215
+			maximum_speed = -0.484
+			soft_attack = 3.9891
+			hard_attack = 3.5319
+			defense = 1.5365
+			breakthrough = 1.5241
+		}
+		add_average_stats = {
+			ap_attack = 15.738
+		}
+		multiply_stats = {
+			build_cost_ic = 0.01
+			reliability = -0.0215
+			maximum_speed = -0.0501
+			fuel_consumption = 0.0335
+		}
+		build_cost_resources = {
+			artillery_production = 1
+		}
+	}
+	#维克斯7.7mm水冷重机枪(同轴)
+	trm_weapon_coax_mg_chi_vickers = { 
+		category = trm_weapon_coax_mg_chi
+		gui_category = trm_weapon_coax_mg
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.3852
+			reliability = -0.0023
+			maximum_speed = -0.0064
+			soft_attack = 0.6884
+			hard_attack = 0.1691
+			defense = 0.2107
+			breakthrough = 0.1128
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0019
+			reliability = -0.0023
+			maximum_speed = -0.0027
+			armor_value = -0.01
+			fuel_consumption = 0.0023
+		}
+		build_cost_resources = {
+		}
+	}
+	#阿姆斯特朗-西德利“美洲豹”四缸风冷汽油发动机(80hp)
+	trm_engine_jaguar_G_0080 = {
+		category = trm_engine_jaguar_G_0080
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.8634
+			reliability = -0.0366
+			maximum_speed = 9.96
+			defense = 0.1605
+			breakthrough = 0.4112
+			fuel_capacity = 47.3748
+			fuel_consumption = 0.6712
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0053
+			reliability = -0.0314
+			maximum_speed = 0.0842
+			soft_attack = 0.1391
+			additional_collateral_damage = 0.1391
+			hard_attack = 0.1391
+			defense = 0.0464
+			breakthrough = 0.2363
+		}
+		build_cost_resources = {
+			steel = 1
+			engine_production = 1
+		}
+	}
+	#AEC四缸水冷汽油发动机(95hp)
+	trm_engine_AEC_G_0095 = {
+		category = trm_engine_AEC_G_0095
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2.0781
+			reliability = -0.0408
+			maximum_speed = 10.4657
+			defense = 0.1897
+			breakthrough = 0.4843
+			fuel_capacity = 49.8114
+			fuel_consumption = 0.7443
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0158
+			reliability = -0.0348
+			maximum_speed = 0.0941
+			soft_attack = 0.1504
+			hard_attack = 0.1504
+			defense = 0.0501
+			breakthrough = 0.2504
+		}
+		build_cost_resources = {
+			steel = 2
+			engine_production = 1
+		}
+	}
+	#劳斯莱斯幻影II六缸水冷汽油发动机(125hp)
+	trm_engine_Phantom_G_0125 = { #对应文件common\technologies\armor_techs_CHI
+		category = trm_engine_Phantom_G_0125 #对应common\units\equipment\trm_tank_chassis_light_CHI
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2.295
+			reliability = -0.0445
+			maximum_speed = 10.9016
+			defense = 0.2175
+			breakthrough = 0.5538
+			fuel_capacity = 52.1283
+			fuel_consumption = 0.8138
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0073
+			reliability = -0.0377
+			maximum_speed = 0.1027
+			soft_attack = 0.1603
+			additional_collateral_damage = 0.1603
+			hard_attack = 0.1603
+			defense = 0.0534
+			breakthrough = 0.2628
+		}
+		build_cost_resources = {
+			steel = 2
+			engine_production = 2
+		}
+	}
+
+}

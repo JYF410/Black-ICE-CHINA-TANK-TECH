@@ -1,0 +1,641 @@
+#中国国民革命军坦克配件参数
+equipment_modules = {
+
+	################################################################################################################
+	##I号坦克A型##
+	#I号坦克机枪塔(手动)
+	trm_light_tank_chi_panzer1a_turret = {
+		category = trm_light_tank_chi_panzer1a_turret
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_mg_chi_mg13_x2 #西蒙&祖尔MG13式7.92mm机枪(双联装)
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+				trm_turret_construction_enclosed_welded #封闭型，焊接装甲
+				trm_turret_construction_enclosed_cast #封闭型，铸造装甲
+				trm_turret_construction_enclosed_cast_rounded #封闭型，弧形铸造装甲
+			}
+		}
+		manpower = 1
+		add_stats = {
+			build_cost_ic = 1.597
+			reliability = 0.02
+			breakthrough = 1
+		}
+		multiply_stats = {
+			build_cost_ic = -0.025
+			soft_attack = 0.1
+			additional_collateral_damage = 0.1
+			hard_attack = 0.1
+			breakthrough = 0.05
+		}
+	}
+	#西蒙&祖尔MG13式7.92mm机枪(双联装)
+	trm_weapon_mg_chi_mg13_x2 = { 
+		category = trm_weapon_mg_chi_mg13_x2
+		gui_category = trm_weapon_mg
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.4801
+			reliability = -0.0086
+			maximum_speed = -0.1039
+			soft_attack = 3.2823
+			hard_attack = 1.0559
+			defense = 0.9899
+			breakthrough = 0.8993
+		}
+		add_average_stats = {
+			ap_attack = 3.0147
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0024
+			reliability = -0.0086
+			maximum_speed = -0.0201
+			fuel_consumption = 0.008
+		}
+	}
+	#克虏伯M305四缸风冷汽油发动机(60hp)
+	trm_engine_krupp_G_0060 = {
+		category = trm_engine_krupp_G_0060
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.6513
+			reliability = -0.0317
+			maximum_speed = 9.3826
+			defense = 0.1293
+			breakthrough = 0.3334
+			fuel_capacity = 44.7791
+			fuel_consumption = 0.5934
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0043
+			reliability = -0.0274
+			maximum_speed = 0.0725
+			soft_attack = 0.1257
+			additional_collateral_damage = 0.1257
+			hard_attack = 0.1257
+			defense = 0.0419
+			breakthrough = 0.2197
+		}
+		build_cost_resources = {
+			steel = 1
+			engine_production = 1
+			
+		}
+	}
+	################################################################################################################
+	##II号坦克A型##
+	#II号坦克机炮塔(手动)
+	trm_light_tank_chi_panzer2a_turret = {
+		category = trm_light_tank_chi_panzer2a_turret
+		gui_category = trm_light_tank_chi_panzer2_turret
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_c_chi_KwK20 #莱茵金属KwK30型20mmL/55机关炮
+			}
+			fixed_trm_tank_coax_gun_slot = { #同轴武器
+				trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+				trm_turret_construction_enclosed_welded #封闭型，焊接装甲
+				trm_turret_construction_enclosed_cast #封闭型，铸造装甲
+				trm_turret_construction_enclosed_cast_rounded #封闭型，弧形铸造装甲
+			}
+			special_type_slot_1 = {
+				trm_special_cupola #车长塔
+			}
+			special_type_slot_2 = {
+				trm_special_cupola #车长塔
+			}
+			special_type_slot_3 = {
+				trm_special_cupola #车长塔
+			}
+			special_type_slot_4 = {
+				trm_special_cupola #车长塔
+			}
+			special_type_slot_5 = {
+				trm_special_schwimmpanzer #两栖浮渡设备
+			}
+		}
+		manpower = 2
+		add_stats = {
+			build_cost_ic = 2.04
+			reliability = 0.02
+			breakthrough = 2.5
+			defense = 0.25
+		}
+		multiply_stats = {
+			build_cost_ic = -0.025
+			soft_attack = 0.15
+			additional_collateral_damage = 0.15
+			hard_attack = 0.15
+			breakthrough = 0.075
+			fuel_consumption = 0.01
+		}
+	}
+	#莱茵金属KwK30型20mmL/55机关炮
+	trm_weapon_c_chi_KwK20 = {
+		category = trm_weapon_c_chi_KwK20
+		gui_category = trm_weapon_ac
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			fixed_trm_tank_ammunition_slot = {
+				trm_ammo_c_chi_kwk20_HE #Sprgr.39型20mm高爆弹(HE)
+				trm_ammo_c_chi_kwk20_AP #PzGr.40型20mm硬芯穿甲弹(APCR)
+			}
+		}
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.4542
+			reliability = -0.0168
+			maximum_speed = -0.3465
+			soft_attack = 3.9467
+			hard_attack = 2.2593
+			defense = 1.3389
+			breakthrough = 1.292
+		}
+		add_average_stats = {
+			ap_attack = 14.0859
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0073
+			reliability = -0.0168
+			maximum_speed = -0.0393
+			fuel_consumption = 0.0242
+		}
+	}
+	#毛瑟MG34式7.92mm机枪(同轴)
+	trm_weapon_coax_mg_chi_mg34_x1 = {
+		category = trm_weapon_coax_mg_chi_mg34_x1
+		gui_category = trm_weapon_coax_mg
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.3718
+			reliability = -0.003
+			maximum_speed = -0.0053
+			soft_attack = 0.8056
+			hard_attack = 0.2261
+			defense = 0.3209
+			breakthrough = 0.1747
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0009
+			reliability = -0.003
+			maximum_speed = -0.0035
+			armor_value = -0.01
+			fuel_consumption = 0.0015
+		}
+	}
+	#Sprgr.39型20mm高爆弹(HE)
+	trm_ammo_c_chi_kwk20_HE = {
+		category = trm_ammo_c_chi_kwk20_AP
+		gui_category = trm_ammo_ac_chi_20_kwk30
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			soft_attack = 0.15
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		build_cost_resources = {
+			steel = 1 #钢
+		}
+	}
+	#PzGr.40型20mm硬芯穿甲弹(APCR)
+	trm_ammo_c_chi_kwk20_AP = {
+		category = trm_ammo_c_chi_kwk20_AP
+		gui_category = trm_ammo_ac_chi_20_kwk30
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			hard_attack = 0.1861
+		}
+		add_average_stats = {
+			ap_attack = 20.1894
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		build_cost_resources = {
+			tungsten = 1 #钨
+		}
+	}
+	#迈巴赫HL57型水冷汽油发动机(120hp)
+	trm_engine_Maybach_G_0120 = {
+		category = trm_engine_Maybach_G_0120
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2.295
+			reliability = -0.0445
+			maximum_speed = 10.9016
+			defense = 0.2175
+			breakthrough = 0.5538
+			fuel_capacity = 52.1283
+			fuel_consumption = 0.8138
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0073
+			reliability = -0.0377
+			maximum_speed = 0.1027
+			soft_attack = 0.1603
+			additional_collateral_damage = 0.1603
+			hard_attack = 0.1603
+			defense = 0.0534
+			breakthrough = 0.2628
+		}
+		build_cost_resources = {
+			steel = 2
+			engine_production = 2
+		}
+	}
+	#迈马赫HL62型水冷汽油发动机(140hp)
+	trm_engine_Maybach_G_0140 = {
+		category = trm_engine_Maybach_G_0140
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2.5138
+			reliability = -0.0478
+			maximum_speed = 11.2925
+			defense = 0.2442
+			breakthrough = 0.6205
+			fuel_capacity = 54.3501
+			fuel_consumption = 0.8805
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0081
+			reliability = -0.0403
+			maximum_speed = 0.1105
+			soft_attack = 0.1691
+			additional_collateral_damage = 0.1691
+			hard_attack = 0.1691
+			defense = 0.0564
+			breakthrough = 0.2739
+		}
+		build_cost_resources = {
+			steel = 3
+			engine_production = 2
+		}
+	}
+	################################################################################################################
+	##II号坦克C型##
+	#II号坦克上部结构
+	trm_light_tank_chi_panzer2c_superstructure_open = {
+		category = trm_light_tank_chi_panzer2_superstructure_open
+		gui_category = trm_light_tank_chi_panzer2_turret
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_c_chi_KwK37 #莱茵金属KwK36型37mmL/45坦克炮
+				trm_weapon_art_chi_75_fk18 #克虏伯FK18型75mmL/26野战炮
+			}
+			fixed_trm_tank_armor_construction_turret_slot = { #炮塔结构
+				trm_turret_construction_open_none #无防护
+				trm_turret_construction_open_shielded #带炮盾
+			}
+		}
+		manpower = 3
+		add_stats = {
+			build_cost_ic = 0.992
+			reliability = 0.02
+			breakthrough = 0.5
+			defense = 1
+		}
+		multiply_stats = {
+			build_cost_ic = -0.15
+			maximum_speed = -0.022
+			soft_attack = 0.05
+			additional_collateral_damage = 0.05
+			hard_attack = 0.05
+			defense = 0.05
+			breakthrough = 0.05
+			fuel_consumption = 0.01
+		}
+	}
+	#克虏伯FK18型75mmL/26野战炮
+	trm_weapon_art_chi_75_fk18 = {
+		category = trm_weapon_art_chi_75_fk18
+		gui_category = trm_weapon_art
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = { artillery }
+		forbid_equipment_type = anti_tank
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 3.7501
+			reliability = -0.0345
+			maximum_speed = -0.8676
+			soft_attack = 8.6567
+			additional_collateral_damage = 86.5672
+			hard_attack = 0.7992
+			defense = 2.368
+			breakthrough = 3.1574
+		}
+		add_average_stats = {
+			ap_attack = 3.3341
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0188
+			reliability = -0.0345
+			maximum_speed = -0.0805
+			fuel_consumption = 0.075	
+		}
+		build_cost_resources = {
+			artillery_production = 2
+			tank_production = 1
+		}
+	}
+	#II号坦克开放式防空炮架
+	trm_light_tank_chi_panzer2c_aa_open = {
+		category = trm_light_tank_chi_panzer2_aa_open
+		gui_category = trm_light_tank_chi_panzer2_turret
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = {
+				trm_weapon_aa_ac_chi_20_flak38 #苏罗通ST-5型20mm机关炮
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_open_none
+				trm_turret_construction_open_shielded
+			}
+		}
+		manpower = 2
+		add_stats = {
+			build_cost_ic = 1.273
+			reliability = 0.02
+		}
+		multiply_stats = {
+			build_cost_ic = -0.125
+			maximum_speed = -0.022
+			soft_attack = 0.05
+			additional_collateral_damage = 0.05
+			hard_attack = 0.05
+		}
+	}
+	#苏罗通ST-5型20mm机关炮
+	trm_weapon_aa_ac_chi_20_flak38 = {
+		category = trm_weapon_aa_ac_chi_20_flak38
+		gui_category = trm_weapon_aa
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			fixed_trm_tank_ammunition_slot = {
+				trm_ammo_c_chi_kwk20_HE #Sprgr.39型20mm高爆弹(HE)
+				trm_ammo_c_chi_kwk20_AP #PzGr.40型20mm硬芯穿甲弹(APCR)
+			}
+		}
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.546
+			reliability = -0.0176
+			maximum_speed = -0.37
+			soft_attack = 3.2793
+			hard_attack = 2.2829
+			air_attack = 9.805
+			defense = 1.0319
+			breakthrough = 1.011
+		}
+		add_average_stats = {
+			ap_attack = 11.6007
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0077
+			reliability = -0.0176
+			maximum_speed = -0.0411
+			fuel_consumption = 0.0309
+		}
+	}
+	################################################################################################################
+	##III号坦克A型##
+	#III号坦克炮塔(手动)
+	trm_medium_tank_chi_panzer3a_turret = {
+		category = trm_medium_tank_chi_panzer3a_turret
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_trm_tank_main_gun_slot = { #主要武器
+				trm_weapon_c_chi_KwK37 #莱茵金属KwK36型37mmL/45坦克炮
+			}
+			fixed_trm_tank_coax_gun_slot = { #同轴武器
+				trm_weapon_coax_mg_chi_mg34_x1 #毛瑟MG34式7.92mm机枪(同轴)
+				trm_weapon_coax_mg_chi_mg34_x2 #毛瑟MG34式7.92mm机枪(同轴/双联装)
+			}
+			fixed_trm_tank_armor_construction_turret_slot = {
+				trm_turret_construction_enclosed_riveted #封闭型，铆接装甲
+				trm_turret_construction_enclosed_welded #封闭型，焊接装甲
+				trm_turret_construction_enclosed_cast #封闭型，铸造装甲
+				trm_turret_construction_enclosed_cast_rounded #封闭型，弧形铸造装甲
+			}
+			special_type_slot_1 = {
+				trm_special_cupola #车长塔
+				trm_special_stabilizer #火炮稳定器
+			}
+			special_type_slot_2 = {
+				trm_special_cupola #车长塔
+				trm_special_stabilizer #火炮稳定器
+			}
+			special_type_slot_3 = {
+				trm_special_cupola #车长塔
+				trm_special_stabilizer #火炮稳定器
+			}
+			special_type_slot_4 = {
+				trm_special_cupola #车长塔
+				trm_special_stabilizer #火炮稳定器
+			}
+			special_type_slot_5 = {
+				trm_special_cupola #车长塔
+				trm_special_stabilizer #火炮稳定器
+			}
+			special_type_slot_6 = {
+				trm_special_cupola #车长塔
+				trm_special_stabilizer #火炮稳定器
+			}
+		}
+		manpower = 3
+		add_stats = {
+			build_cost_ic = 2.741
+			reliability = 0.02
+			breakthrough = 4
+			defense = 0.5
+		}
+		multiply_stats = {
+			build_cost_ic = -0.025
+			soft_attack = 0.2
+			additional_collateral_damage = 0.2
+			hard_attack = 0.2
+			breakthrough = 0.1
+			fuel_consumption = 0.02
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	#莱茵金属KwK36型37mmL/45坦克炮
+	trm_weapon_c_chi_KwK37 = {
+		category = trm_weapon_c_chi_KwK37
+		gui_category = trm_weapon_c
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = { anti_tank }
+		allowed_module_categories = {
+			fixed_trm_tank_ammunition_slot = {
+				trm_ammo_c_chi_kwk37_APHE #PzGr.型37mm穿甲榴弹(APHE)
+				trm_ammo_c_chi_kwk37_APCR #PzGr.40型37mm硬芯穿甲弹(APCR)
+			}
+		}
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.68
+			reliability = -0.0188
+			maximum_speed = -0.4039
+			soft_attack = 4.4716
+			hard_attack = 3.9028
+			defense = 1.5985
+			breakthrough = 1.5983
+		}
+		add_average_stats = {
+			ap_attack = 19.5894
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0084
+			reliability = -0.0188
+			maximum_speed = -0.0438
+			fuel_consumption = 0.028
+		}
+		build_cost_resources = {
+			artillery_production = 1
+		}
+	}
+	#毛瑟MG34式7.92mm机枪(同轴/双联装)
+	trm_weapon_coax_mg_chi_mg34_x2 = {
+		category = trm_weapon_coax_mg_chi_mg34_x2
+		gui_category = trm_weapon_coax_mg
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.548
+			reliability = -0.004
+			maximum_speed = -0.0174
+			soft_attack = 1.1018
+			hard_attack = 0.3445
+			defense = 0.4234
+			breakthrough = 0.2436
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0014
+			reliability = -0.004
+			maximum_speed = -0.0047
+			armor_value = -0.01
+			fuel_consumption = 0.0023
+		}
+	}
+	#毛瑟MG34式7.92mm机枪(航向)
+	trm_weapon_hull_mg_chi_mg34_x1 = {
+		category = trm_weapon_hull_mg_chi_mg34_x1
+		gui_category = trm_weapon_hull_mg
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 0.3718
+			reliability = -0.003
+			maximum_speed = -0.0053
+			soft_attack = 0.8056
+			hard_attack = 0.2261
+			defense = 0.3209
+			breakthrough = 0.1747
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0009
+			reliability = -0.003
+			maximum_speed = -0.0035
+			armor_value = -0.01
+			fuel_consumption = 0.0015
+		}
+	}
+	#PzGr.型37mm穿甲榴弹(APHE)
+	trm_ammo_c_chi_kwk37_APHE = {
+		category = trm_ammo_c_chi_kwk37_APHE
+		gui_category = trm_ammo_c_chi_37_kwk36
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			soft_attack = 0.65
+			hard_attack = 0.12
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		build_cost_resources = {
+			steel = 1 #钢
+			tungsten = 1 #钨
+		}
+	}
+	#PzGr.40型37mm硬芯穿甲弹(APCR)
+	trm_ammo_c_chi_kwk37_APCR = {
+		category = trm_ammo_c_chi_kwk37_APCR
+		gui_category = trm_ammo_c_chi_37_kwk36
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			hard_attack = 0.1501
+		}
+		add_average_stats = {
+			ap_attack = 36.3681
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+		}
+		build_cost_resources = {
+			steel = 1 #钢
+			tungsten = 3 #钨
+		}
+	}
+	#迈巴赫HL108TR12缸水冷汽油发动机（250hp）
+	trm_engine_Maybach_G_0250 = {
+		category = trm_engine_Maybach_G_0250
+		gui_category = trm_engine_G
+		sfx = sfx_ui_sd_module_engine
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 3.7408
+			reliability = -0.0619
+			maximum_speed = 12.967
+			defense = 0.3772
+			breakthrough = 0.9531
+			fuel_capacity = 65.4358
+			fuel_consumption = 1.2131
+		}
+		multiply_stats = {
+			build_cost_ic = 0.0126
+			reliability = -0.0516
+			maximum_speed = 0.1438
+			soft_attack = 0.2072
+			additional_collateral_damage = 0.2072
+			hard_attack = 0.2072
+			defense = 0.0691
+			breakthrough = 0.3215
+		}
+		build_cost_resources = {
+			steel = 2
+			engine_production = 3
+		}
+	}
+
+}

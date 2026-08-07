@@ -32,12 +32,11 @@ equipments = {
 		visual_level = 3 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
 	}
 	################################################################################################################
-	#维克斯-卡登·洛伊德Mk.VI底盘
+	##维克斯-卡登·洛伊德Mk.VI底盘
 	trm_tankette_tank_chassis_chi_cardenloyd_mkVI = {
 		derived_variant_name = trm_tankette_tank_equipment_chi_cardenloyd_mkVI
 		year = 1929
 		archetype = trm_tankette_tank_chassis
-		parent = trm_tankette_tank_chassis_chi_cardenloyd_mkVI
 		priority = 4005
 		visual_level = 4 #重要！用于定义模型名称“CHI_trm_light_armor_X_entity”的优先级！
 		module_slots = {
@@ -75,6 +74,7 @@ equipments = {
 				allowed_module_categories = {
 					trm_armour_006
 					trm_armour_009
+					trm_armour_012
 				}
 			}
 			fixed_trm_tank_armor_design_slot = {
@@ -101,7 +101,7 @@ equipments = {
 			} 
 		}
 		build_cost_ic = 1.65
-		reliability = 0.55
+		reliability = 0.6
 		hardness = 0.5
 		armor_value = 0
 		resources = {
@@ -110,5 +110,6 @@ equipments = {
 		}
 		manpower = 1
 	}
-
+	################################################################################################################
+	
 }
