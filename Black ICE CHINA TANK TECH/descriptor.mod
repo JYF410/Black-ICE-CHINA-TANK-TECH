@@ -1,4 +1,4 @@
-version="2.2.2"
+version="2.2.3"
 tags={
 	"Gameplay"
 	"Historical"
@@ -8,6 +8,8 @@ dependencies={
 	"BlackICE Event-GFX"
 	"黑冰测试版 内核汉化"
 	"黑冰：东亚重置"
+	"黑冰模型丰富 BlackICE more model"
+	"BlackICE: 3d Unit Pack Compatability"
 }
 name="Black ICE CHINA TANK TECH"
 picture="thumbnail.png"
