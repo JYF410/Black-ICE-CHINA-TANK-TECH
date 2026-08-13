@@ -1,4 +1,4 @@
-version="2.0"
+version="2.2.2"
 tags={
 	"Gameplay"
 	"Historical"
@@ -11,5 +11,5 @@ dependencies={
 }
 name="Black ICE CHINA TANK TECH"
 picture="thumbnail.png"
-supported_version="1.19.2.0"
+supported_version="1.19.*"
 remote_file_id="3463196432"
