@@ -1,0 +1,535 @@
+scripted_gui = {
+	BI_tech_queue_trm_armour_chi_folder = {
+		context_type = player_context
+		
+		window_name = "BI_tech_queue_parent_container"
+		parent_window_name = "trm_armour_chi_folder"
+		
+		dynamic_lists = {
+			tech_queue_select_list = {
+				array = add_to_queue
+				change_scope = no
+				entry_container = "BI_tech_queue_select"
+			}
+			tech_queue_select_list_MIO = {
+				array = mio@var:v
+				change_scope = no
+				entry_container = "BI_tech_queue_select_MIO"
+				value = mio
+			}
+			
+			tech_queue_select_list_xp = {
+				array = xp_bonus
+				change_scope = no
+				entry_container = "BI_tech_queue_select_xp"
+			}
+			tech_queue_select_list_xp_locked = {
+				array = xp_bonus_locked
+				change_scope = no
+				entry_container = "BI_tech_queue_select_xp_locked"
+			}
+			tech_queue_select_list_bonus = {
+				array = add_to_queue
+				change_scope = no
+				entry_container = "BI_tech_queue_select_bonus"
+			}
+			
+			tech_queue_selected_list = {
+				array = ROOT.current_research@armor_folder
+				change_scope = no
+				entry_container = "BI_tech_queue_selected"
+			}
+			
+			# Overlay
+			tech_queue_select_list_overlay = {
+				array = add_to_queue_overlay
+				change_scope = no
+				entry_container = "BI_tech_queue_select_overlay"
+			}
+			tech_queue_select_list_MIO_overlay = {
+				array = mio@var:v
+				change_scope = no
+				entry_container = "BI_tech_queue_select_MIO_overlay"
+				value = mio
+			}
+			tech_queue_select_list_bonus_overlay = {
+				array = add_to_queue_overlay
+				change_scope = no
+				entry_container = "BI_tech_queue_select_bonus"
+			}
+			
+			tech_queue_slots = {
+				array = ROOT.research_slots
+				change_scope = yes
+				entry_container = "BI_tech_queue_slots"
+				index = slot_i
+			}
+			tech_queue_slots_in_queue = {
+				array = research_queue@ROOT
+				change_scope = no
+				entry_container = "BI_tech_queue_slots_in_queue"
+			}
+		}
+		
+		properties = {
+			bonus = {
+				x = global.tech_x@var:v
+				y = by
+				frame = bf
+				image = "[GetTechBonusBG]"
+			}
+			add_to_queue = {
+				x = global.tech_x@var:v
+				y = global.tech_y@var:v
+			}
+			days = {
+				x = dx
+				y = dy
+			}
+			add_to_queue_MIO_bg = {
+				x = mx
+				y = global.tech_y@var:v
+			}
+			add_to_queue_MIO = {
+				x = mx
+				y = global.tech_y@var:v
+				image = GFX_mio_[?mio.GetTokenKey]
+			}
+			in_queue = {
+				frame = queue_i
+				x = global.tech_x@var:v
+				y = global.tech_y@var:v
+			}
+			xp_research = {
+				x = global.tech_x@var:v
+				y = xy
+				frame = global.tech_xp_type@var:v
+			}
+			
+			# Overlay
+			add_to_queue_overlay = {
+				x = ox
+				y = oy
+				image = "[GetResearchOverlay]"
+			}
+			add_to_queue_MIO_bg_overlay = {
+				x = mx
+				y = global.tech_y@var:v
+			}
+			add_to_queue_MIO_overlay = {
+				x = mx
+				y = global.tech_y@var:v
+				image = GFX_mio_[?mio.GetTokenKey]
+			}
+			
+			active = {
+				image = "[GetResearchActiveOverlay]"
+				x = tx
+				y = ty
+			}
+			progress = {
+				image = "[GetResearchActiveProgress]"
+				frame = ROOT.research_progress@var:v
+				x = tx
+				y = py
+			}
+		}
+		
+		triggers = {	
+			generate_array_click_enabled = {
+				has_country_flag = armor_folder
+				if = {
+					limit = {
+						has_country_flag = ui_research_overlay
+					}
+					
+					all_of = {
+						array = global.trm_armour_chi_folder
+						
+						if = {
+							limit = {
+								NOT = { has_tech = var:v }
+							}
+							if = {
+								limit = {
+									NOT = { has_variable = research_linked_slot@var:v }
+								}
+								if = {
+									limit = {
+										check_variable = { global.tech_unlocks@var:v^num > 0 }
+									}
+									all_of = {
+										array = ROOT.research_mios@var:v
+										value = m
+										if = {
+											limit = {
+												has_variable = research_mio_available@var:m
+											}
+											add_to_temp_array = { mio@var:v = m }
+										}
+									}
+								}
+								add_to_temp_array = { add_to_queue_overlay = v }
+							}
+							if = {
+								limit = {
+									check_variable = { global.tech_xp_type@var:v > 0 }
+								}
+								if = {
+									limit = { has_variable = ROOT.tech_xp_bonus@var:v }
+									add_to_temp_array = { xp_bonus_locked = v }
+								}
+								else = { add_to_temp_array = { xp_bonus = v } }
+							}
+						}
+					}
+					all_of = {
+						array = global.trm_armour_chi_folder_xor
+						
+						if = {
+							limit = {
+								check_variable = { research_xor_blocked@var:v = 0 }
+								NOT = { has_tech = var:v }
+							}
+							if = {
+								limit = {
+									NOT = { has_variable = research_linked_slot@var:v }
+								}
+								if = {
+									limit = {
+										check_variable = { global.tech_unlocks@var:v^num > 0 }
+									}
+									all_of = {
+										array = ROOT.research_mios@var:v
+										value = m
+										if = {
+											limit = {
+												has_variable = research_mio_available@var:m
+											}
+											add_to_temp_array = { mio@var:v = m }
+										}
+									}
+								}
+								add_to_temp_array = { add_to_queue_overlay = v }
+							}
+							if = {
+								limit = {
+									check_variable = { global.tech_xp_type@var:v > 0 }
+								}
+								if = {
+									limit = { has_variable = ROOT.tech_xp_bonus@var:v }
+									add_to_temp_array = { xp_bonus_locked = v }
+								}
+								else = { add_to_temp_array = { xp_bonus = v } }
+							}
+						}
+					}
+					all_of = {
+						array = global.trm_armour_chi_folder_dynamic
+						
+						if = {
+							limit = {
+								NOT = { has_tech = var:v }
+								meta_trigger = {
+									text = { v_[X] = yes }
+									X = "[?v.GetTokenKey]"
+								}
+							}
+							if = {
+								limit = {
+									NOT = { has_variable = research_linked_slot@var:v }
+								}
+								if = {
+									limit = {
+										check_variable = { global.tech_unlocks@var:v^num > 0 }
+									}
+									all_of = {
+										array = ROOT.research_mios@var:v
+										value = m
+										if = {
+											limit = {
+												has_variable = research_mio_available@var:m
+											}
+											add_to_temp_array = { mio@var:v = m }
+										}
+									}
+								}
+								add_to_temp_array = { add_to_queue_overlay = v }
+							}
+							if = {
+								limit = {
+									check_variable = { global.tech_xp_type@var:v > 0 }
+								}
+								if = {
+									limit = { has_variable = ROOT.tech_xp_bonus@var:v }
+									add_to_temp_array = { xp_bonus_locked = v }
+								}
+								else = { add_to_temp_array = { xp_bonus = v } }
+							}
+						}
+					}
+				}
+				else = {
+					all_of = {
+						array = global.trm_armour_chi_folder
+						
+						if = {
+							limit = {
+								NOT = { has_tech = var:v }
+							}
+							if = {
+								limit = {
+									NOT = { has_variable = research_linked_slot@var:v }
+								}
+								if = {
+									limit = {
+										check_variable = { global.tech_unlocks@var:v^num > 0 }
+									}
+									all_of = {
+										array = ROOT.research_mios@var:v
+										value = m
+										if = {
+											limit = {
+												has_variable = research_mio_available@var:m
+											}
+											add_to_temp_array = { mio@var:v = m }
+										}
+									}
+								}
+								add_to_temp_array = { add_to_queue = v }
+							}
+							if = {
+								limit = {
+									check_variable = { global.tech_xp_type@var:v > 0 }
+								}
+								if = {
+									limit = { has_variable = ROOT.tech_xp_bonus@var:v }
+									add_to_temp_array = { xp_bonus_locked = v }
+								}
+								else = { add_to_temp_array = { xp_bonus = v } }
+							}
+						}
+					}
+					all_of = {
+						array = global.trm_armour_chi_folder_xor
+						
+						if = {
+							limit = {
+								check_variable = { research_xor_blocked@var:v = 0 }
+								NOT = { has_tech = var:v }
+							}
+							if = {
+								limit = {
+									NOT = { has_variable = research_linked_slot@var:v }
+								}
+								if = {
+									limit = {
+										check_variable = { global.tech_unlocks@var:v^num > 0 }
+									}
+									all_of = {
+										array = ROOT.research_mios@var:v
+										value = m
+										if = {
+											limit = {
+												has_variable = research_mio_available@var:m
+											}
+											add_to_temp_array = { mio@var:v = m }
+										}
+									}
+								}
+								add_to_temp_array = { add_to_queue = v }
+							}
+							if = {
+								limit = {
+									check_variable = { global.tech_xp_type@var:v > 0 }
+								}
+								if = {
+									limit = { has_variable = ROOT.tech_xp_bonus@var:v }
+									add_to_temp_array = { xp_bonus_locked = v }
+								}
+								else = { add_to_temp_array = { xp_bonus = v } }
+							}
+						}
+					}
+					all_of = {
+						array = global.trm_armour_chi_folder_dynamic
+						
+						if = {
+							limit = {
+								NOT = { has_tech = var:v }
+								meta_trigger = {
+									text = { v_[X] = yes }
+									X = "[?v.GetTokenKey]"
+								}
+							}
+							if = {
+								limit = {
+									NOT = { has_variable = research_linked_slot@var:v }
+								}
+								if = {
+									limit = {
+										check_variable = { global.tech_unlocks@var:v^num > 0 }
+									}
+									all_of = {
+										array = ROOT.research_mios@var:v
+										value = m
+										if = {
+											limit = {
+												has_variable = research_mio_available@var:m
+											}
+											add_to_temp_array = { mio@var:v = m }
+										}
+									}
+								}
+								add_to_temp_array = { add_to_queue = v }
+							}
+							if = {
+								limit = {
+									check_variable = { global.tech_xp_type@var:v > 0 }
+								}
+								if = {
+									limit = { has_variable = ROOT.tech_xp_bonus@var:v }
+									add_to_temp_array = { xp_bonus_locked = v }
+								}
+								else = { add_to_temp_array = { xp_bonus = v } }
+							}
+						}
+					}
+				}
+			}
+			days_click_enabled = {
+				ui_research_time_estimate = yes
+			}
+			bonus_visible = {
+				ui_research_bonus = yes
+			}
+			add_to_queue_MIO_visible = {
+				set_temp_variable = {
+					mx = {
+						value = global.tech_x@var:v
+						add = {
+							value = -30
+							multiply = i
+						}
+					}
+				}
+			}
+			add_to_queue_MIO_overlay_visible = {
+				set_temp_variable = {
+					mx = {
+						value = global.tech_x@var:v
+						add = 30
+						add = {
+							value = -30
+							multiply = i
+						}
+					}
+				}
+			}
+			xp_research_click_enabled = {
+				ui_xp_research_bonus = yes
+			}
+			xp_research_dynamic_click_enabled = {
+				ui_xp_research_bonus = yes
+			}
+			
+			in_queue_visible = {
+				set_temp_variable = {
+					queue_i = { 
+						value = slot_i
+						add = 1
+					}
+				}
+				check_variable = { ROOT.research_folder@var:v = token:armor_folder }
+			}
+		}
+		
+		effects = {
+			xp_research_click = {
+				ui_add_xp_research_bonus = yes
+			}
+			bonus_click = {
+				if = {
+					limit = { ROOT = { can_research = var:v } }
+					lock_research_bonus = yes
+				}
+			}
+			add_to_queue_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_click = yes
+			}
+			add_to_queue_shift_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_shift_click = yes
+			}
+			add_to_queue_alt_click = {
+				set_temp_variable = { alt_click = 1 }
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_click = yes
+			}
+			add_to_queue_MIO_bg_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_MIO_click = yes
+			}
+			add_to_queue_MIO_bg_shift_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_MIO_shift_click = yes
+			}
+			add_to_queue_MIO_bg_alt_click = {
+				set_temp_variable = { alt_click = 1 }
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_MIO_click = yes
+			}
+			
+			add_to_queue_overlay_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_click = yes
+				meta_effect = {
+					text = {
+						custom_effect_tooltip = tech_effect|[X]
+					}
+					X = "[?v.GetTokenKey]"
+				}
+			}
+			add_to_queue_overlay_shift_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_shift_click = yes
+			}
+			add_to_queue_overlay_alt_click = {
+				set_temp_variable = { alt_click = 1 }
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_click = yes
+			}
+			add_to_queue_MIO_bg_overlay_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_MIO_click = yes
+			}
+			add_to_queue_MIO_bg_overlay_shift_click = {
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_MIO_shift_click = yes
+			}
+			add_to_queue_MIO_bg_overlay_alt_click = {
+				set_temp_variable = { alt_click = 1 }
+				set_temp_variable = { folder = token:armor_folder }
+				ui_select_technology_MIO_click = yes
+			}
+			
+			in_queue_click = {
+				ui_in_queue_click = yes
+			}
+			in_queue_shift_click = {
+				ui_in_queue_shift_click = yes
+			}
+			in_queue_right_click = { 
+				ui_in_queue_right_click = yes
+			}
+			in_queue_shift_right_click = {
+				add_to_array = { array = research_queue@ROOT value = v }
+				remove_from_array = { array = research_queue@ROOT index = i }
+			}
+			in_queue_control_click = {
+				ui_remove_technology = yes
+			}
+		}
+	}
+}

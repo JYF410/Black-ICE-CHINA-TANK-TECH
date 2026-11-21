@@ -1,0 +1,777 @@
+
+
+scripted_gui = {
+	BI_research_slot_tab = {
+		context_type = player_context
+		
+		window_name = "research_tab_container"
+		parent_window_token = technology_tab
+	}
+	BI_research_slot_view = {
+		context_type = player_context
+		
+		window_name = "research_slot_info_container"
+		parent_window_name = "research_slots_hook"
+		#parent_window_token = technology_tab
+        
+		visible = {
+		}
+		
+		#dirty = ui_research
+		
+		effects = {
+			research_slot_overlay_1_click = {
+				set_variable = { ROOT.selected_research_slot = 1 }
+				
+				set_variable = { ROOT.selected_research_slot_state = -1 }
+			}
+			research_slot_overlay_2_click = {
+				set_variable = { ROOT.selected_research_slot = 2 }
+				
+				set_variable = { ROOT.selected_research_slot_state = -1 }
+			}
+			research_slot_overlay_click = {
+				set_variable = { ROOT.selected_research_slot = i }
+				add_to_variable = { ROOT.selected_research_slot = 3 }
+				
+				set_variable = { ROOT.selected_research_slot_state = v }
+			} 
+			research_slot_overlay_right_click = {
+				if = {
+					limit = {
+						ROOT = { has_variable = selected_research_slot }
+					}
+				 	ROOT = {
+						clear_variable = selected_research_slot
+					}
+				}
+				else = {
+					ROOT = {
+						meta_effect = {
+							text = {
+								goto_state = [ID]
+							}
+							ID = "[Prev.GetID]"
+						}
+					}
+				}
+			}
+			research_slot_lost_overlay_right_click = {
+				if = {
+					limit = {
+						ROOT = { has_variable = selected_research_slot }
+					}
+				 	ROOT = {
+						clear_variable = selected_research_slot
+						add_to_variable = { ui_research = 1 }
+					}
+				}
+				else = {
+					ROOT = {
+						meta_effect = {
+							text = {
+								goto_state = [ID]
+							}
+							ID = "[Prev.GetID]"
+						}
+					}
+				}
+			}
+		}
+		
+		dynamic_lists = {
+			research_slot_list = {
+				array = research_slots
+				change_scope = yes
+				#entry_container = "[GetResearchSlotEntry]"
+				entry_container = "research_slot_container"
+			}
+		}
+        
+		triggers = { 
+			#research_rights_1_click_enabled = {
+			#	if = {
+			#		limit = {
+			#			all_of_scopes = {
+			#				array = research_slots
+			#				
+			#				if = {
+			#					limit = {
+			#						check_variable = { building_level@research_centre > 0 }
+			#					}
+			#					add_to_temp_array = { valid_slots = THIS }
+			#				}
+			#			}
+			#		}
+			#	}
+			#	if = {
+			#		limit = {
+			#			ROOT = { research_centre_requirement > 0 }
+			#		}
+			#		add_to_temp_array = { valid_slots = 1 }
+			#	}
+			#}
+			research_rights_icon_list_visible = {
+				check_variable = { research_rights@ROOT^num < 10 }
+			}
+			research_rights_icon_list_small_visible = {
+				check_variable = { research_rights@ROOT^num > 9 }
+			}
+			
+			marker_visible = {
+				set_temp_variable = { entry = -1 }
+				set_temp_variable = { entry_text = -1 }
+				set_temp_variable = { entry_text_small = -1 }
+				set_temp_variable = { selected = i }
+				add_to_temp_variable = { selected = 3 }
+				check_variable = { selected = Root.selected_research_slot }
+			}
+			marker_1_visible = {
+				check_variable = { Root.selected_research_slot = 1 }
+			}
+			marker_2_visible = {
+				check_variable = { Root.selected_research_slot = 2 }
+			}
+			research_slot_overlay_visible = {
+				set_temp_variable = { selected = i }
+				add_to_temp_variable = { selected = 3 }
+				NOT = {
+					check_variable = { Root.selected_research_slot = selected }
+				}
+			}
+			research_slot_overlay_1_visible = {
+				NOT = {
+					check_variable = { Root.selected_research_slot = 1 }
+				}
+			} 
+			research_slot_overlay_2_visible = {
+				NOT = {
+					check_variable = { Root.selected_research_slot = 2 }
+				}
+			} 
+			research_slot_lost_overlay_visible = {
+				NOT = {
+					CONTROLLER = {
+						OR = {
+							tag = ROOT 
+							is_ally_with = ROOT 
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	
+	BI_tech_infantry_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "infantry_folder"
+		
+		visible = {
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:infantry_folder }
+				}
+			}
+		}
+	}
+	BI_tech_support_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "support_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:support_folder }
+				}
+			}
+		}
+	}
+	BI_tech_artillery_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "artillery_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:artillery_folder }
+				}
+			}
+		}
+	}
+	BI_tech_tank_techs_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "tank_techs_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:tank_techs_folder }
+				}
+			}
+		}
+	}
+	
+	BI_tech/trm_armour_ger_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_ger_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_sov_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_sov_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_eng_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_eng_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_usa_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_usa_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_fra_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_fra_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_jap_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_jap_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_ita_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_ita_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_minor_swe_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_minor_swe_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_minor_cze_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_minor_cze_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_minor_hun_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_minor_hun_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	BI_tech/trm_armour_minor_pol_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "trm_armour_minor_pol_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:armor_folder }
+				}
+			}
+		}
+	}
+	
+	BI_tech/air_techs_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "air_techs_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	BI_tech/luftwaffe_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "luftwaffe_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	BI_tech/sovietair_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "sovietair_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	BI_tech/britishair_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "britishair_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	BI_tech/usair_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "usair_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	BI_tech/frenchair_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "frenchair_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	BI_tech/japanair_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "japanair_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+					is_in_array = { research_rights@ROOT = token:air_techs_folder_army }
+					is_in_array = { research_rights@ROOT = token:air_techs_folder_navy }
+				}
+			}
+		}
+	}
+	BI_tech/italyair_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "italyair_folder"
+		
+		visible = {   
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_techs_folder }
+				}
+			}
+		}
+	}
+	
+	BI_tech_naval_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "mtgnavalfolder"
+		
+		visible = {   
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:naval_folder }
+				}
+			}
+		}
+	}
+	BI_tech_naval_techs_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "mtg_navaltechs_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:naval_techs_folder }
+				}
+			}
+		}
+	}
+	
+	BI_tech_electronics_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "electronics_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:electronics_folder }
+					is_in_array = { research_rights@ROOT = token:nuclear_folder }
+				}
+			}
+		}
+	}
+	BI_tech_electronics_folder_partially = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent_electronics"	
+		parent_window_name = "electronics_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				is_in_array = { research_rights@ROOT = token:nuclear_folder }
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:electronics_folder }
+				}
+			}
+		}
+	}
+	BI_tech_industry_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "industry_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:industry_folder }
+				}
+			}
+		}
+	}
+	BI_tech_raw_materials_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "raw_materials_folder"
+		
+		visible = {   
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:raw_materials_folder }
+				}
+			}
+		}
+	}
+	
+	BI_tech_ww1_land_doctrine_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "ww1_land_doctrine_folder"
+		
+		visible = {  
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:ww1_land_doctrine_folder }
+				}
+			}
+		}
+	}
+	BI_tech_land_doctrine_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "land_doctrine_folder"
+		
+		visible = {   
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:land_doctrine_folder }
+				}
+			}
+		}
+	}
+	BI_tech_air_doctrine_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "air_doctrine_folder"
+		
+		visible = {   
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:air_doctrine_folder }
+				}
+			}
+		}
+	}
+	BI_tech_naval_doctrine_folder = {
+		context_type = player_context
+		 
+		window_name = "BI_tech_prevent"	
+		parent_window_name = "naval_doctrine_folder"
+		
+		visible = {    
+			NOT = { check_variable = { selected_research_slot_state = -1 } }
+			var:selected_research_slot_state = {
+				NOT = { 
+					is_in_array = { research_rights@ROOT = token:naval_doctrine_folder }
+				}
+			}
+		}
+	}
+	
+	BI_request_armor_tab = {
+		context_type = player_context
+		 
+		window_name = "BI_request_armor_tab_container"	
+		parent_window_name = "countrytechtreeview"
+		
+		visible = {
+			NOT = {
+				has_country_flag = GER_armor
+				has_country_flag = ITA_armor
+				has_country_flag = JAP_armor
+				has_country_flag = ENG_armor
+				has_country_flag = FRA_armor
+				has_country_flag = USA_armor
+				has_country_flag = SOV_armor
+				has_country_flag = CZE_armor
+				has_country_flag = POL_armor
+				has_country_flag = HUN_armor
+				has_country_flag = SWE_armor
+				has_country_flag = CHI_armor
+			}
+		}
+		
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+		
+		dynamic_lists = {
+			request_armor_list = {
+				array = request_armor_list
+				change_scope = yes
+				entry_container = "request_armor_entry"
+			}
+		}
+		
+		triggers = {    
+			flag_click_enabled = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = allowarmorrequest }
+					}
+					ROOT = {
+						OR = {
+							tank_production > 29
+							tank_assembly > 5
+							custom_trigger_tooltip = {
+								tooltip = HAS_PRODUCED_200_TANKS
+								check_variable = { total_equipment_produced_armor > 199 }
+							}
+						}
+					}
+					OR = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+						is_licensing_any_to = ROOT
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						ROOT = { has_government = communism }
+					}
+					else_if = {
+						limit = {
+							democratic_govt = yes
+						}
+						ROOT = { democratic_govt = yes }
+					}
+				}
+			}
+			bg_visible = {
+				check_variable = { request_armor_list^num > 0 }
+			}
+		}
+		
+		effects = {
+			request_armor_click = {
+				if = {
+					limit = {
+						check_variable = { request_armor_list^num = 0 }
+					}
+					add_to_array = { request_armor_list = GER }
+					add_to_array = { request_armor_list = ITA }
+					add_to_array = { request_armor_list = JAP }
+					add_to_array = { request_armor_list = ENG }
+					add_to_array = { request_armor_list = FRA }
+					add_to_array = { request_armor_list = USA }
+					add_to_array = { request_armor_list = SOV }
+				}
+				else = {
+					clear_array = request_armor_list
+				}
+			}
+			flag_click = {
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
+				country_event = blackiceevents.164
+				custom_effect_tooltip = needs_approval
+				event_option_tooltip = blackiceevents.164.a
+			}
+		}
+	}
+}
