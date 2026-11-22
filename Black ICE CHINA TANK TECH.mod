@@ -1,4 +1,4 @@
-version="2.2.5"
+version="2.2.6"
 tags={
 	"Gameplay"
 	"Historical"
@@ -9,10 +9,9 @@ dependencies={
 	"黑冰测试版 内核汉化"
 	"黑冰：东亚重置"
 	"黑冰模型丰富 BlackICE more model"
-	"BlackICE Aircraft Designer"
 }
 name="黑冰：中国国民革命军坦克科技 Black ICE CHINA TANK TECH"
 picture="thumbnail.png"
 supported_version="1.20.*"
-path="C:/Users/JYF/Documents/Paradox Interactive/Hearts of Iron IV/mod/黑冰：中国国民革命军坦克科技 Black ICE CHINA TANK TECH"
+path="C:/Users/JYF/Documents/Paradox Interactive/Hearts of Iron IV/mod/Black ICE CHINA TANK TECH"
 remote_file_id="3463196432"

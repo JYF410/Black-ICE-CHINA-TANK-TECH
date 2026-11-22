@@ -60,7 +60,7 @@ technologies = {
 						is_puppet_of = CHI
 						has_opinion = {
 							target = CHI
-							value > 70
+							value > 49
 						}
 					}
 					has_tech = early_tractors #早期拖拉机
