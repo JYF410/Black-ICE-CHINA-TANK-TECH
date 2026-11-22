@@ -1,4 +1,4 @@
-version="2.2.6"
+version="2.2.7"
 tags={
 	"Gameplay"
 	"Historical"
@@ -9,6 +9,7 @@ dependencies={
 	"黑冰测试版 内核汉化"
 	"黑冰：东亚重置"
 	"黑冰模型丰富 BlackICE more model"
+	"BlackICE Aircraft Designer"
 }
 name="黑冰：中国国民革命军坦克科技 Black ICE CHINA TANK TECH"
 picture="thumbnail.png"

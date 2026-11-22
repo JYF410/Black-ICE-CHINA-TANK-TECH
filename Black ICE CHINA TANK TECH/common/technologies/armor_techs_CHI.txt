@@ -83,7 +83,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_special_schwimmpanzer_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -120,7 +121,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_special_tauchpanzer_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -154,7 +156,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_special_cupola_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -283,7 +286,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_ergonomics_standard_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -792,7 +796,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_ergonomics_standard_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -907,7 +912,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_transmission_double_differential_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -947,7 +953,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_ergonomics_standard_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -1063,7 +1070,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_suspension_torsion_double_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -1105,7 +1113,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_tank_construction_standard_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -1145,7 +1154,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_tank_construction_quality_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt
@@ -1181,7 +1191,8 @@ technologies = {
 		}
 		on_research_complete = {
 			set_temp_variable = { tech = token:tech_trm_tank_construction_streamlined_chi }
-			is_tech_ai_valid = yes
+			# is_tech_ai_valid is not a valid effect here (log error) - disabled
+			# is_tech_ai_valid = yes
 			custom_effect_tooltip = tech_category_tt
 			custom_effect_tooltip = armor_tech_tt
 			custom_effect_tooltip = armor_tech_component_tt

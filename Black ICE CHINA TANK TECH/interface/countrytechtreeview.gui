@@ -23160,7 +23160,7 @@ guiTypes = {
 		containerWindowType = { #新增中国国民革命军坦克科技树文件夹
 			name = "trm_armour_chi_folder" #对应GFX文件2094
 			position = { x=@TECH_X_OFFSET y=47 }
-			size = { width = 2060 height = 100%% }
+			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
@@ -23171,22 +23171,12 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-			containerWindowType = {
-				name = "techtree_bg_full"
-				position = { x = 0 y = 0 }
-				size = { width = 2200 height = 100%% }
-				clipping = no
-				background = {
-					name = "Background"
-					quadTextureSprite = "GFX_techtree_stripes"
-				}
-			}
 			#中国国民革命军坦克科技树年份坐标
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2100 height = 1820
+					width = 100%% height = 1820
 					min = { width = 100% height = 100% }
 				}
 				clipping = no
@@ -23395,6 +23385,90 @@ guiTypes = {
 					format = centre
 					orientation = "UPPER_LEFT"
 				}
+			}
+			gridboxtype = {
+				name = "tech_trm_tankette_tank_chassis_chi_cv33_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_tankette_tank_chassis_chi_cv35_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_tankette_tank_chassis_chi_ue_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_zb_1_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_tankette_tank_chassis_chi_cardenloyd_mkVI_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_panzer1a_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_panzer2a_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_panzer2c_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_medium_tank_chassis_chi_panzer3a_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_vickers_mke_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_t26b_1_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_t26b_2_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_light_tank_chassis_chi_m3a3_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_trm_medium_tank_chassis_chi_m4a4_tree"
+				position = { x = 190 y = 172 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 			gridboxtype = {
 				name = "tech_trm_chi_armour_tree"
