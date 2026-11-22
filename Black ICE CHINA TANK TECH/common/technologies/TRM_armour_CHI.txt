@@ -54,17 +54,6 @@ technologies = {
 		allow = {
 			if = {
 				limit = { original_tag = CHI }
-				OR = {
-					ZXL = {
-						NOT = { has_war_with = CHI }
-						is_puppet_of = CHI
-						has_opinion = {
-							target = CHI
-							value > 49
-						}
-					}
-					has_tech = early_tractors #早期拖拉机
-				}
 			}
 		}
 		enable_equipments = { #研发基础汽油发动机科技的前置条件：必须先研发以下坦克底盘科技

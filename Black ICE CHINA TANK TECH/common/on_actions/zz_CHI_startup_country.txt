@@ -1,21 +1,8 @@
-# CHI startup patch - keeps this submod independent of BI's history/countries file.
-#
-# BI ships replace_path="history/countries"; if this submod also ships
-# CHI - China.txt it freezes that country's history at the copied version and
-# must be re-synced after every BI update. This file sets the only value we
-# needed from that copy, so BI's own history file stays authoritative.
-#
-# on_startup has NO current scope, so the effect body must be inlined here and
-# the country must be entered explicitly with every_country.
+# CHI_armor is granted through the armour-request tab instead of at startup.
+# (conditions: ROOT is CHI + focus KMT_the_big_rear_concept + tech basic_machine_tools)
 on_actions = {
 	on_startup = {
 		effect = {
-			every_country = {
-				limit = { tag = CHI }
-
-				# research rights: shows the ROC armour research tab
-				set_country_flag = CHI_armor
-			}
 		}
 	}
 }

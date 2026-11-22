@@ -42,7 +42,7 @@ scripted_gui = {
 				entry_container = "request_armor_entry"
 			}
 		}
-		
+		#坦克科技树解锁条件
 		triggers = {    
 			flag_click_enabled = {
 				if = {
@@ -51,32 +51,21 @@ scripted_gui = {
 					}
 					ROOT = {
 						OR = {
-							tank_production > 29
-							tank_assembly > 5
-							custom_trigger_tooltip = {
-								tooltip = HAS_PRODUCED_200_TANKS
-								check_variable = { total_equipment_produced_armor > 199 }
-							}
+							tank_production > 5
+							tank_assembly > 1
+							has_tech = early_tractors #早期拖拉机
 						}
 					}
 					OR = {
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						is_licensing_any_to = ROOT
+						has_completed_focus = KMT_the_big_rear_concept
+						has_completed_focus = KMT_chinese_panzers
+						has_completed_focus = KMT_hire_soviet_designer
 					}
 					if = {
 						limit = {
-							has_government = communism
+							has_government = neutrality
 						}
-						ROOT = { has_government = communism }
-					}
-					else_if = {
-						limit = {
-							democratic_govt = yes
-						}
-						ROOT = { democratic_govt = yes }
+						ROOT = { has_government = neutrality }
 					}
 				}
 			}
@@ -98,17 +87,31 @@ scripted_gui = {
 					add_to_array = { request_armor_list = FRA }
 					add_to_array = { request_armor_list = USA }
 					add_to_array = { request_armor_list = SOV }
+					if = {
+						limit = { ROOT = { tag = CHI } }
+						remove_from_array = { request_armor_list = JAP } #民国旗是否出现在列表中
+						add_to_array = { request_armor_list = CHI } #点民国旗是否给科技树
+					}
 				}
 				else = {
 					clear_array = request_armor_list
 				}
 			}
 			flag_click = {
-				
-				custom_effect_tooltip = generic_skip_one_line_tt
-				country_event = blackiceevents.164
-				custom_effect_tooltip = needs_approval
-				event_option_tooltip = blackiceevents.164.a
+				if = {
+					limit = { ROOT = { tag = CHI } }
+					ROOT = {
+						set_country_flag = CHI_armor
+						country_event = chi_armor_unlock.1
+					}
+					clear_array = request_armor_list
+				}
+				else = {
+					custom_effect_tooltip = generic_skip_one_line_tt
+					country_event = blackiceevents.164
+					custom_effect_tooltip = needs_approval
+					event_option_tooltip = blackiceevents.164.a
+				}
 			}
 		}
 	}

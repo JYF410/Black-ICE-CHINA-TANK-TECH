@@ -1,0 +1,11 @@
+add_namespace = chi_armor_unlock
+
+country_event = {
+	id = chi_armor_unlock.1
+	title = chi_armor_unlock.1.t
+	desc = chi_armor_unlock.1.d
+	is_triggered_only = yes
+	option = {
+		name = chi_armor_unlock.1.a
+	}
+}

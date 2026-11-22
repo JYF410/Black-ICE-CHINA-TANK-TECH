@@ -1,0 +1,5 @@
+﻿# CHI armour request unlock message
+l_english:
+ chi_armor_unlock.1.t: "Armour Research Access Granted"
+ chi_armor_unlock.1.d: "The National Revolutionary Army has obtained its own armoured research programme.\n\nBecause the research interface caches its layout, please save the game and load it again once - the new tank tree will then display correctly."
+ chi_armor_unlock.1.a: "Understood."

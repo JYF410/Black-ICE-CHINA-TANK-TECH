@@ -1,0 +1,5 @@
+﻿# CHI armour request unlock message
+l_simp_chinese:
+ chi_armor_unlock.1.t: "装甲科技研究权已获得"
+ chi_armor_unlock.1.d: "国民革命军已获得本国的装甲科技研究计划。\n\n由于科研界面会缓存布局，请先保存游戏并重新载入一次，新的坦克科技树就会正常显示（连线与图标位置都会恢复）。"
+ chi_armor_unlock.1.a: "明白了。"
